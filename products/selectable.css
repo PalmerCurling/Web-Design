@@ -1,9 +1,6 @@
 ul.products {
 	display: none;
 }
-ul.products li {
-	position: relative;
-}
 
 input {
 	display: none;
@@ -36,8 +33,16 @@ ul.categories >li {
 	display: inline-block;
 	width: 45%;
 	text-align: center;
-	padding-top: 150px; 
+	padding-top: 150px;
+	position: relative;
+	-webkit-animation: move 3s 5;
 }
+
 span{
 	display: block;
+}
+
+@-webkit-keyframes move {
+	000% {left: 200px;}
+	100% {left: 0px;}
 }
