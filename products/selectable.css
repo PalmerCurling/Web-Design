@@ -1,6 +1,9 @@
 ul.products {
 	display: none;
 }
+ul.products li {
+	position: relative;
+}
 
 input {
 	display: none;
