@@ -42,7 +42,3 @@ span{
 	display: block;
 }
 
-@-webkit-keyframes move {
-	000% {left: 200px;}
-	100% {left: 0px;}
-}

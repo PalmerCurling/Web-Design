@@ -35,3 +35,250 @@ ul.nav li a:hover {
 	background-position: 50% 50%;
 	background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjE5cHgiIGhlaWdodD0iMTlweCIgdmlld0JveD0iMCAwIDE5IDE5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxOSAxOSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTcuNjMyLDE2Ljk1NWwtNC43NjEtNC43NjJjMS4xMDktMS4xODgsMS43OTUtMi43NzYsMS43OTUtNC41MjdjMC0zLjY2Ny0yLjk4Mi02LjY0OS02LjY0OS02LjY0OQ0KCWMtMy42NjcsMC02LjY0OSwyLjk4Mi02LjY0OSw2LjY0OGMwLDMuNjY3LDIuOTgyLDYuNjQ3LDYuNjQ5LDYuNjQ3YzEuMzkxLDAsMi42ODItMC40MzIsMy43NS0xLjE2NGw0LjgzNCw0LjgzNEwxNy42MzIsMTYuOTU1eg0KCSBNMi44MjQsNy42NjZjMC0yLjg2MywyLjMzLTUuMTkyLDUuMTkyLTUuMTkyYzIuODY0LDAsNS4xOTIsMi4zMjksNS4xOTIsNS4xOTJjMCwyLjg2MS0yLjMyOCw1LjE5MS01LjE5Miw1LjE5MQ0KCUM1LjE1NCwxMi44NTUsMi44MjQsMTAuNTI3LDIuODI0LDcuNjY2eiIvPg0KPC9zdmc+DQo=");
 }
+
+ul.products {
+	display: none;
+}
+
+input {
+	display: none;
+}
+
+input:checked + label + ul.products {
+	display: block;
+	width: 100%;
+	height: 140px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 1px solid block;
+} 
+
+input:checked + label + ul.products li {
+	display: inline-block;
+	width: 15%;
+	font-align: center;
+} 
+
+ul.categories {
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+
+ul.categories >li {
+	display: inline-block;
+	width: 45%;
+	text-align: center;
+	padding-top: 150px;
+	position: relative;
+	-webkit-animation: move 3s 5;
+}
+
+span{
+	display: block;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul.promotion { 
+  display: block;
+  width: 100%;
+  height: 250px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+ul.promotion li {
+  display: inline-block;
+  width: 32%;
+  height: 100%;
+  vertical-align: top;
+  margin-left: -4px;
+}
+
+ul.promotion li span {
+  display: block;
+}
+
+ul.promotion li a {
+  /* make a tag as block to control size */
+  display: block;
+  /* make a tag size to be the same as its parent li tag */
+  width: 100%;
+  height: 100%;
+  /* set background image in the center */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* remove underline */
+  text-decoration: none;
+}
+
+/* set different background images */
+ul.promotion li:nth-of-type(1) a {
+  background-image: url("http://images.apple.com/mac/home/images/promo_yosemite_large.jpg");
+  color: white;
+}
+
+ul.promotion li:nth-of-type(1) span:nth-of-type(1) {
+  padding-top: 170px;
+}
+
+ul.promotion li:nth-of-type(2) a {
+  background-image: url("http://images.apple.com/mac/home/images/promo_macpro_large.jpg");
+  color: white;
+}
+
+ul.promotion li:nth-of-type(3) a {
+  background-image: url("http://images.apple.com/v/U2/shared/promo/a/images/promo_u2_large.jpg");
+  color: black;
+}
+
+ul.promotion li span:nth-of-type(1) {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+ul.promotion li span:nth-of-type(2) {
+  color: silver;
+  font-size: 15px;
+}
+
+img.split {
+  width: 48%;
+  height: 48%;
+  border: 0px solid green;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+}
+
+img:nth-of-type(1) {
+  top: 0;
+  left: 0;
+}
+
+img:nth-of-type(2) {
+  top:0;
+  left:50%;
+}
+
+img:nth-of-type(3) {
+  top:50%;
+  left:0;
+}
+
+img:nth-of-type(4) {
+  top:50%;
+  left:50%;
+}
+
+div.cover {
+  width: 543px;
+  height: 356px;
+  background-image: url("http://images.apple.com/mac/home/images/hero_sticker_macbook_air_large.jpg");
+  position: relative;
+}
+
+img.split:hover {
+  border: 0px solid black;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  z-index: 1;
+  opacity: 1;
+}
+
+ul{
+  text-align: center;
+}
+
+span.actions, img.actions, a.actions {
+  display: block;
+}
+
+ul li{
+  text-decoration: none;
+  list-style-type: none;
+  width: 23%;
+  min-width: 200px;
+  min-height: 200px;
+  max-height: 400px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+ul li a{
+  text-decoration: none;
+}
+
+li a img{
+  margin: auto;
+}
+
+li a span{
+  display: block;
+  text-align: center;
+}
+
+li a span:nth-of-type(1) {
+  font-size: 1.5em;
+}
+
+li a span:nth-of-type(2) {
+  font-size: 1em;
+}
+
+li a span:nth-of-type(3) {
+  color: blue;
+  font-size: 1em;
+}
+
+li a span:nth-of-type(3):hover {
+  text-decoration: underline;
+}
+
+li a span:nth-of-type(1){
+  color: black;
+  margin-bottom: 20px;
+}
+
+li span:nth-of-type(2){
+  color: black;
+}
+
+li:nth-of-type(3) span:nth-of-type(3) {
+  color: black;
+  text-decoration: none;
+}
+
+li:nth-of-type(3) span:nth-of-type(3):hover {
+  color: black;
+  text-decoration: none;
+}
+
+li:nth-of-type(1) span:nth-of-type(3):after{
+  content: "> "
+}
+
+li:nth-of-type(2) span:nth-of-type(3):after{
+  content: "> "
+}
+
+li:nth-of-type(4) span:nth-of-type(3):after{
+  content: "> "
+}
+
+li:nth-of-type(4){
+  border-style: solid;
+  border-width: 2px;
+  border-right: #ff0000;
+  border-top: #ff0000;
+  border-bottom: #ff0000;
+  border-left-color: #E0E0E0;
+}
