@@ -1,0 +1,1402 @@
+﻿###########################################################
+#                                                         #
+# Station Information                                     #
+#                                                         #
+###########################################################
+
+## IX Support Tool Settings
+###########################################################
+# IX Support Tool setting flag (Station Information)
+# 1: Already set via IX Support Tool or 0: Not set via IX Support Tool
+###########################################################
+BI_SET_FROM_SUPPORTSOFT="1"
+
+###########################################################
+# IX Support Tool setting memo
+#
+###########################################################
+BI_COMMUNICATION_MEMO_A=""
+BI_COMMUNICATION_MEMO_B=""
+
+###########################################################
+# Association key
+# MAC Address
+###########################################################
+BI_ASSOCIATION_KEY=""
+
+###########################################################
+# Station type
+# 1: Video Door Station or 2: Audio Only Door Station or 3: Master Station
+###########################################################
+BI_DEVICE_TYPE="3"
+
+
+## Identification
+###########################################################
+# Number
+# 3-5 digits
+###########################################################
+BI_NODE_NO="001"
+
+###########################################################
+# Name
+# 1-24 alphanumeric characters
+###########################################################
+BI_DEVICE_NAME="Master Station1"
+
+###########################################################
+# Name (furigana)
+# 1-24 alphanumeric characters
+###########################################################
+BI_DEVICE_PRONUNCIATION_NAME=""
+
+###########################################################
+# Location
+# 1-24 alphanumeric characters
+###########################################################
+BI_LOCATION=""
+
+
+## ID and Password
+###########################################################
+# Administrator ID
+# 1-32 alphanumeric characters
+###########################################################
+BI_ADMIN_ID="admin"
+
+###########################################################
+# Administrator Password
+# 1-32 alphanumeric characters
+###########################################################
+BI_ADMIN_PASS="admin"
+
+###########################################################
+# User ID
+# 1-32 alphanumeric characters
+###########################################################
+BI_USER_ID="user"
+
+###########################################################
+# User Password
+# 1-32 alphanumeric characters
+###########################################################
+BI_USER_PASS="user"
+
+
+## Language
+###########################################################
+# Language
+# 日本語
+###########################################################
+BI_LANGUAGE="2"
+
+###########################################################
+# Language (VER2)
+# 1: Japanese or 2: English or 3: French or 4: Spanish or
+# 5: Dutch or 6: Traditional Chinese or 7: Simplified Chinese
+###########################################################
+BI_LANGUAGE_VER2="2"
+
+
+## Time
+###########################################################
+# [Time Zone] Select time zone
+# UTC+09:00
+###########################################################
+BI_TIMEZONE="7"
+
+###########################################################
+# [Time Zone]Select time zone (VER2)
+# 1: (GMT-12:00) Eniwetok
+#  or 2: (GMT-11:00) Midway Atoll
+#  or 3: (GMT-11:00) American Samoa
+#  or 4: (GMT-10:00) Hawaii
+#  or 5: (GMT-10:00) Alaska (Adak)
+#  or 6: (GMT-09:00) Alaska
+#  or 7: (GMT-08:00) Pacific Standard Time (U.S.), Tijuana
+#  or 8: (GMT-08:00) Pacific Standard Time (Canada)
+#  or 9: (GMT-07:00) Arizona
+#  or 10: (GMT-07:00) Mountain Standard Time (U.S., Canada)
+#  or 11: (GMT-06:00) Saskatchewan
+#  or 12: (GMT-06:00) Mexico City
+#  or 13: (GMT-06:00) Central America
+#  or 14: (GMT-06:00) Central Standard Time (U.S., Canada)
+#  or 15: (GMT-05:00) Eastern Indiana
+#  or 16: (GMT-05:00) Bogota
+#  or 17: (GMT-05:00) Lima
+#  or 18: (GMT-05:00) Quito
+#  or 19: (GMT-05:00) Eastern Standard Time (U.S., Canada)
+#  or 20: (GMT-04:00) Caracas
+#  or 21: (GMT-04:00) La Paz
+#  or 22: (GMT-04:00) Santiago
+#  or 23: (GMT-04:00) Atlantic Standard Time (Canada)
+#  or 24: (GMT-04:00) Georgetown
+#  or 25: (GMT-03:30) Newfoundland
+#  or 26: (GMT-03:00) Greenland
+#  or 27: (GMT-03:00) Buenos Aires
+#  or 28: (GMT-03:00) Brasilia
+#  or 29: (GMT-02:00) Mid-Atlantic
+#  or 30: (GMT-01:00) Azores
+#  or 31: (GMT-01:00) Cabo Verde
+#  or 32: (GMT 00:00) Casablanca
+#  or 33: (GMT 00:00) Monrovia
+#  or 34: (GMT 00:00) Greenwich Mean Time
+#  or 35: (GMT 00:00) Dublin, Edinburgh, Lisbon, London
+#  or 36: (GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm
+#  or 37: (GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb, Belgrade, Bratislava, Budapest, Ljubljana, Prague
+#  or 38: (GMT+01:00) Brussels, Madrid, Copenhagen, Paris
+#  or 39: (GMT+01:00) West Africa
+#  or 40: (GMT+02:00) Sofia, Vilnius
+#  or 41: (GMT+02:00) Athens, Istanbul
+#  or 42: (GMT+02:00) Jerusalem
+#  or 43: (GMT+02:00) Cairo
+#  or 44: (GMT+02:00) Harare, Pretoria
+#  or 45: (GMT+02:00) Bucharest
+#  or 46: (GMT+02:00) Helsinki, Riga, Tallinn
+#  or 47: (GMT+03:00) Minsk
+#  or 48: (GMT+03:00) Kuwait, Riyadh
+#  or 49: (GMT+03:00) Nairobi
+#  or 50: (GMT+03:00) Baghdad
+#  or 51: (GMT+03:00) Saint Petersburg
+#  or 52: (GMT+03:30) Tehran
+#  or 53: (GMT+04:00) Moscow, Volgograd
+#  or 54: (GMT+04:00) Abu Dhabi, Muscat
+#  or 55: (GMT+04:00) Bagh, Tbilisi
+#  or 56: (GMT+04:00) Yerevan
+#  or 57: (GMT+04:30) Kabul
+#  or 58: (GMT+05:00) Islamabad, Karachi
+#  or 59: (GMT+05:00) Tashkent
+#  or 60: (GMT+05:30) Calcutta, Chennai, Mumbai, New Delhi
+#  or 61: (GMT+05:30) Sri Jayawardenapura Kotte
+#  or 62: (GMT+05:45) Kathmandu
+#  or 63: (GMT+06:00) Yekaterinburg
+#  or 64: (GMT+06:00) Almaty, Astana
+#  or 65: (GMT+06:00) Dhaka
+#  or 66: (GMT+06:30) Yangon(Rangoon)
+#  or 67: (GMT+07:00) Novosibirsk
+#  or 68: (GMT+07:00) Bangkok, Hanoi
+#  or 69: (GMT+07:00) Jakarta
+#  or 70: (GMT+08:00) Krasnoyarsk
+#  or 71: (GMT+08:00) Ulaanbaatar
+#  or 72: (GMT+08:00) Kuala Lumpur, Singapore
+#  or 73: (GMT+08:00) Perth
+#  or 74: (GMT+08:00) Taipei
+#  or 75: (GMT+08:00) Beijing, Chongqing, Hong Kong, Ürümqi
+#  or 76: (GMT+09:00) Irkutsk
+#  or 77: (GMT+09:00) Seoul
+#  or 78: (GMT+09:00) Osaka, Sapporo, Tokyo
+#  or 79: (GMT+09:30) Adelaide
+#  or 80: (GMT+09:30) Darwin
+#  or 81: (GMT+10:00) Yakutsk
+#  or 82: (GMT+10:00) Canberra, Melbourne
+#  or 83: (GMT+10:00) Sidney
+#  or 84: (GMT+10:00) Guam
+#  or 85: (GMT+10:00) Port Moresby
+#  or 86: (GMT+10:00) Brisbane
+#  or 87: (GMT+10:00) Hobart
+#  or 88: (GMT+11:00) Vladivostok
+#  or 89: (GMT+11:00) Solomon Islands
+#  or 90: (GMT+11:00) New Caledonia
+#  or 91: (GMT+12:00) Magadan
+#  or 92: (GMT+12:00) Auckland, Wellington
+#  or 93: (GMT+12:00) Fiji
+#  or 94: (GMT+12:00) Kamchatka
+#  or 95: (GMT+12:00) Marshall Islands, Kwajalein
+#  or 96: (GMT+13:00) Tonga (Nuku'alofa), Kiribati (Phoenix Islands)
+#  or 97: (GMT+13:00) Samoa
+#  or 98: (GMT+13:00) Tokelau
+#  or 99: (GMT+14:00) Kiribati (Line Islands)
+###########################################################
+BI_TIMEZONE_VER2="7"
+
+###########################################################
+# [Daylight Savings Time] Enable automatic daylight savings time
+# 1: Yes or 2: No
+###########################################################
+BI_SUMMERTIME_FLAG="2"
+
+
+###########################################################
+# [NTP] Enable NTP
+# 1: Yes or 2: No
+###########################################################
+BI_NTP_USE_FLAG="2"
+
+###########################################################
+# [Date and Time] Time
+# 2012/1/1/00:00:00-2037/12/31/23:59:59
+###########################################################
+BI_DATETIME="2013/1/1 0:0:0"
+
+
+###########################################################
+#                                                         #
+# Network Settings                                        #
+#                                                         #
+###########################################################
+
+## IX Support Tool Settings
+###########################################################
+# IX Support Tool setting flag (Network Settings)
+# 1: Already set via IX Support Tool or 0: Not set via IX Support Tool
+###########################################################
+NE_SET_FROM_SUPPORTSOFT="1"
+
+
+## IP Address
+###########################################################
+# IP addressing method
+# 1: IPv4 or 2: IPv6
+###########################################################
+NE_IP_VERSION="1"
+
+###########################################################
+# IP addressing method - IPv4 / IPv6
+# 1: DHCP or 2: Static or 3: Stateless
+###########################################################
+NE_ADDRESS_SET_METHOD="2"
+
+###########################################################
+# [IPv4 Address] IP Address
+# 1.0.0.0-223.255.255.255
+###########################################################
+NE_IPV4_SRC_ADDR=""
+
+###########################################################
+# [IPv4 Address] Subnet Mask
+# 128.0.0.0-255.255.255.255
+###########################################################
+NE_SUBNET_MASK=""
+
+###########################################################
+# [IPv4 Address] Default Gateway
+# 1.0.0.0-223.255.255.255
+###########################################################
+NE_IPV4_DEFAULT_GATEWAY=""
+
+###########################################################
+# [IPv6 Address] IP Address
+# 2000::0-3FFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF or
+# FD00::0-FDFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
+###########################################################
+NE_IPV6_SRC_ADDR=""
+
+###########################################################
+# [IPv6 Address] Default Gateway
+# ::FF:0-FEFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
+###########################################################
+NE_IPV6_DEFAULT_GATEWAY=""
+
+
+## DNS
+###########################################################
+# Primary Server - [IPv4]
+# 1.0.0.0-223.255.255.255
+###########################################################
+NE_IPV4_PRIMARY_DNS_ADDR=""
+
+###########################################################
+# Primary Server - [IPv6]
+# ::FF:0-FEFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
+###########################################################
+NE_IPV6_PRIMARY_DNS_ADDR=""
+
+###########################################################
+# Secondary Server - [IPv4]
+# 1.0.0.0-223.255.255.255
+###########################################################
+NE_IPV4_SECONDARY_DNS_ADDR=""
+
+###########################################################
+# Secondary Server - [IPv6]
+# ::FF:0-FEFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
+###########################################################
+NE_IPV6_SECONDARY_DNS_ADDR=""
+
+
+## SIP
+###########################################################
+# Audio 1  RTP Start Port
+# 1-65534
+###########################################################
+NE_AUDIO_RTP_START_PORT_1="20000"
+
+###########################################################
+# Audio 1  RTP End Port
+# 1-65535
+###########################################################
+NE_AUDIO_RTP_END_PORT_1="21000"
+
+###########################################################
+# Audio 2  RTP Start Port
+# 1-65534
+###########################################################
+NE_AUDIO_RTP_START_PORT_2="22000"
+
+###########################################################
+# Audio 2  RTP End Port
+# 1-65535
+###########################################################
+NE_AUDIO_RTP_END_PORT_2="23000"
+
+###########################################################
+# Video 1  RTP Start Port
+# 1-65534
+###########################################################
+NE_VIDEO_RTP_START_PORT_1="30000"
+
+###########################################################
+# Video 1  RTP End Port
+# 1-65535
+###########################################################
+NE_VIDEO_RTP_END_PORT_1="31000"
+
+###########################################################
+# Video 2  RTP Start Port
+# 1-65534
+###########################################################
+NE_VIDEO_RTP_START_PORT_2="32000"
+
+###########################################################
+# Video 2  RTP End Port
+# 1-65535
+###########################################################
+NE_VIDEO_RTP_END_PORT_2="33000"
+
+###########################################################
+#  [Connection] SIP Signaling Port
+# 1-65535
+###########################################################
+NE_SIP_SIGNALING_PORT="5060"
+
+###########################################################
+# [Miscellaneous] Call health check timer [sec]
+# 80-3600 or -1: Do not transmit re-INVITE
+###########################################################
+NE_SIP_HEALTCH_CHECK_TIMER="90"
+
+
+## Multicast Address
+###########################################################
+# For Paging - [IPv4]
+# 224.0.0.0-239.255.255.255
+###########################################################
+NE_MCAST_IPV4_ADDR=""
+
+###########################################################
+# For Paging - [IPv6]
+# FF10::0-FF1F:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
+###########################################################
+NE_MCAST_IPV6_ADDR=""
+
+
+## Audio
+###########################################################
+# Audio CODEC
+# 1: G.711 (μ-law) or 2: G.711 (a-law)
+###########################################################
+NE_AUDIO_ENCODER="1"
+
+###########################################################
+# Audio RTP Transmission Interval [msec]
+# 20 or 40 or 60 or 80 or 100
+###########################################################
+NE_RTP_SEND_INTERVAL="20"
+
+###########################################################
+# RTP Idle Detection Time [sec]
+# 10-180
+###########################################################
+NE_RTP_IDLE_NOTICE_TIMER="10"
+
+###########################################################
+# [Audio Buffer] Packets Buffered at Audio Start
+# 0-4
+###########################################################
+NE_PLAY_START_ACCUMELATION_PKT="1"
+
+###########################################################
+# [Audio Buffer] Maximum Packets Buffered
+# 2-10
+###########################################################
+NE_MAX_ACCUMELATION_PKT="3"
+
+
+## Packet Priority
+###########################################################
+# TOS Value (Audio)
+# 0x00-0xFF
+###########################################################
+NE_AUDIO_TOS_VALUE="0x00"
+
+###########################################################
+# TOS Value (SIP)
+# 0x00-0xFF
+###########################################################
+NE_SIP_TOS_VALUE="0x00"
+
+###########################################################
+# VLAN Setting
+# 1: Enable or 2: Disable
+###########################################################
+NE_VLAN_SETTING="2"
+
+###########################################################
+# VLAN ID
+# 1-4094
+###########################################################
+NE_VLAN_ID="1"
+
+###########################################################
+# VLAN Priority
+# 0-7
+###########################################################
+NE_VLAN_PRIORITY="0"
+
+
+## NTP
+###########################################################
+# [Primary Server] Address [IPv4]
+# 1.0.0.0-223.255.255.255 or hostname (1-64 alphanumeric characters)
+###########################################################
+NE_NTP_PRIMARY_SERVER_IPV4_ADDR=""
+
+###########################################################
+# [Primary Server] Address [IPv6]
+# ::FF:0-FEFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF or
+# hostname (1-64 alphanumeric characters)
+###########################################################
+NE_NTP_PRIMARY_SERVER_IPV6_ADDR=""
+
+###########################################################
+# [Primary Server] Port
+# 1-65535
+###########################################################
+NE_NTP_PRIMARY_PORT="123"
+
+###########################################################
+# [Secondary Server] Address [IPv4]
+# 1.0.0.0-223.255.255.255 or hostname (1-64 alphanumeric characters)
+###########################################################
+NE_NTP_SECONDARY_SERVER_IPV4_ADDR=""
+
+###########################################################
+# [Secondary Server] Address [IPv6]
+# ::FF:0-FEFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF or
+# hostname (1-64 alphanumeric characters)
+###########################################################
+NE_NTP_SECONDARY_SERVER_IPV6_ADDR=""
+
+###########################################################
+# [Secondary Server] Port
+# 1-65535
+###########################################################
+NE_NTP_SECONDARY_PORT="123"
+
+###########################################################
+# Synchronization Interval [hour]
+# 1-255
+###########################################################
+NE_NTP_SYNC_INTERVAL="24"
+
+
+###########################################################
+#                                                         #
+# System Information                                      #
+#                                                         #
+###########################################################
+
+## IX Support Tool Settings
+###########################################################
+# IX Support Tool setting flag (System Information)
+# 1: Already set via IX Support Tool or 0: Not set via IX Support Tool
+###########################################################
+SI_SET_FROM_SUPPORTSOFT="1"
+
+
+## Location Registry
+###########################################################
+# Location Name (1)-(50)
+# 1-24 alphanumeric characters
+# Note:
+# Indicates the locations (SI_NODE_LOCATION) to be set (max. 50)
+###########################################################
+SI_NODE_LOCATION=""
+
+
+## Address book
+###########################################################
+# [Station List] (1)-(500)
+# 
+# Format: SI_ADDRESS_BOOK="<Station number>&&&<Station name>&&&<Station name (furigana)>&&&<Location>&&&<Type>&&&<IPv4 Address>&&&<IPv6 Address>"
+#    Parameter 1: Station number:      : 3-5 digits
+#    Parameter 2: Station name      : 1-24 alphanumeric characters
+#    Parameter 3: Station name (furigana) : 1-24 alphanumeric characters
+#    Parameter 4: Location      : Location (1)-(50)
+#    Parameter 5: Type          : 1: Door Station or 2: Master Station
+#    Parameter 6: IPv4 Address     : 1.0.0.0-223.255.255.255
+#    Parameter 7: IPv6 Address     : 2000::0-3FFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
+#                                    or FD00::0-FDFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
+# 
+# Note:
+# Parameters separated with "&&&"
+# Indicates the stations (SI_ADDRESS_BOOK) to be set (max. 500)
+###########################################################
+SI_ADDRESS_BOOK="002&&&Video Station1&&&&&&&&&1&&&&&&"
+SI_ADDRESS_BOOK="003&&&Video Station2&&&&&&&&&1&&&&&&"
+SI_ADDRESS_BOOK="004&&&Video Station3&&&&&&&&&1&&&&&&"
+
+###########################################################
+# [Network Camera List] (1)-(50)
+# 
+# Format: SI_OTHER_PRODUCT_BOOK="<Network Camera Number>&&&<Network Camera Name>&&&<Network camera name (furigana)>&&&<ID>&&&<Password>&&&<IPv4 Address>&&&<IPv6 Address>"
+#    Parameter 1: Network Camera Number      : 01-50
+#    Parameter 2: Network Camera Name      : 1-24 alphanumeric characters
+#    Parameter 3: Network camera name (furigana) : 1-24 alphanumeric characters
+#    Parameter 4: ID                 : 1-32 alphanumeric characters
+#    Parameter 5: Password            : 1-32 alphanumeric characters
+#    Parameter 6: IPv4 Address          : 1.0.0.0-223.255.255.255
+#    Parameter 7: IPv6 Address          : ::FF:0-FEFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
+# 
+# Note:
+# Parameters separated with "&&&"
+# Indicates the network cameras (SI_OTHER_PRODUCT_BOOK) to be set (max. 50)
+###########################################################
+SI_OTHER_PRODUCT_BOOK=""
+
+## Group
+###########################################################
+# [Group list] (1)-(50)
+# 
+# Format: SI_CALL_GROUP_INFO="<Group number>&&&<Group name>&&&<Group name (furigana)>"
+#    Parameter 1: Group number      : 01-99
+#    Parameter 2: Group name      : 1-24 alphanumeric characters
+#    Parameter 3: Group name (furigana) : 1-24 alphanumeric characters
+# 
+# Note:
+# Parameters separated with "&&&"
+# Indicates the groups (SI_CALL_GROUP_INFO) to be set (max. 50)
+###########################################################
+SI_CALL_GROUP_INFO=""
+
+###########################################################
+# [Unicast Group Composition] Station (1)-(500)
+# 
+# Format: SI_UNI_SET_CALL_GROUP_ORG="<Station number>&&&<Group number>[&&&<Group number>...]"
+#    Parameter 1: Station number:    : 3-5 digits
+#    Parameter 2: Group number  :01-99 (Multiple selection is acceptable (up to 50))
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the stations (SI_UNI_SET_CALL_GROUP_ORG) to be set (max. 500)
+#  e.g. If a station with station number 311 belongs to Group number 11 and Group number 44,
+#  it will be shown as "311&&&11&&&44."
+# * Same station cannot be in both communication types per group.
+###########################################################
+SI_UNI_SET_CALL_GROUP_ORG=""
+
+###########################################################
+# [Multicast Group Composition] Station (1)-(500)
+# 
+# Format: SI_MULTI_CALL_GROUP_ORG="<Station number>&&&<Group number>[&&&<Group number>...]"
+#    Parameter 1: Station number:    : 3-5 digits
+#    Parameter 2: Group number  : 01-99 (Multiple selection is acceptable (up to 50))
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the stations (SI_MULTI_CALL_GROUP_ORG) to be set (max. 500)
+#  e.g. If a station with station number 311 belongs to Group number 22 and Group number 33,
+#  it will be shown as "311&&&22&&&33."
+# * Same station cannot be in both communication types per group.
+###########################################################
+SI_MULTI_CALL_GROUP_ORG=""
+
+
+## Custom Sound Registry
+###########################################################
+# Custom Sound Registry
+#
+# Format: SI_USR_SOUND_SET="001&&&test1&&&test1.wav&&&0"
+#    Parameter 1: Number                    : 001-100
+#    Parameter 2: Sound name (excluding .wav)  : Under 128 bytes using UTF-8 encoding
+#    Parameter 3: Filename          : Under 128 bytes using UTF-8 encoding
+#    Parameter 4: Operation                   : 0: Register or 1: Remove
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the custom sounds (SI_USR_SOUND_SET) to be set (max. 100)
+###########################################################
+SI_USR_SOUND_SET=""
+
+
+###########################################################
+#                                                         #
+# Contact / Audio Output Settings                         #
+#                                                         #
+###########################################################
+
+## IX Support Tool Settings
+###########################################################
+# IX Support Tool setting flag (Contact / Audio Output Settings)
+# 1: Already set via IX Support Tool or 0: Not set via IX Support Tool
+###########################################################
+CU_SET_FROM_SUPPORTSOFT="1"
+
+
+## Contact Input
+###########################################################
+# [Contact Input Specifications] Type (1)
+# 1: Make or 2: Break
+###########################################################
+CU_CONTACT_INPUT_1_PORARITY="1"
+
+###########################################################
+# [Contact Input Specifications] Detection time [msec] (1)
+# 200-2000msec / 100msec step
+###########################################################
+CU_CONTACT_INPUT_1_DECISION_TIME="200"
+
+###########################################################
+# [Contact Input Specifications] Usage (1)
+# 1:Call
+###########################################################
+CU_CONTACT_INPUT_1_USAGE=""
+
+
+## Output Specifications
+###########################################################
+# [Relay Output Specifications] Output Time [msec] (1)
+# 0: Momentary or 200-300000
+# Note:
+# 200-2000msec / 200msec step 3000-300000msec / 1000msec step
+###########################################################
+CU_CONTACT_OUTPUT_1_OUTPUT_TIME="400"
+
+###########################################################
+# [Relay Output Specifications] Usage (1)
+# 1: Door release
+###########################################################
+CU_CONTACT_OUTPUT_1_USAGE="1"
+
+
+###########################################################
+#                                                         #
+# Call Settings                                           #
+#                                                         #
+###########################################################
+
+## IX Support Tool Settings
+###########################################################
+# IX Support Tool setting flag (Call Settings)
+# 1: Already set via IX Support Tool or 0: Not set via IX Support Tool
+###########################################################
+CA_SET_FROM_SUPPORTSOFT="1"
+
+
+## Incoming call
+###########################################################
+# [Call Answer Settings] Auto Answer
+# 1: ON or 0: OFF
+###########################################################
+CA_AUTO_ANSWER="0"
+
+###########################################################
+# Ringtone Count [time(s)]
+# 1-20 or 0: Infinite
+###########################################################
+CA_RINGING_COUNT="0"
+
+###########################################################
+# [Ringtone Settings (Normal Call)] Ringtone (1)-(500)
+#
+# Format: CA_CALL_TONE="<Station number>&&&<Ringtone>"
+#    Parameter 1: Station number : 3-5 digits
+#    Parameter 2: Ringtone   : ｺｰﾙﾊﾟﾀｰﾝ1-6 or ﾄﾚﾓﾛ音 or 話中音 or 保留音 or
+#                     操作音 or ｴﾗｰ音 or custom sound source (1)-(100)
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the ringtones (CA_CALL_TONE) to be set (max. 500)
+###########################################################
+CA_CALL_TONE="002&&&ｺｰﾙﾊﾟﾀｰﾝ1"
+CA_CALL_TONE="003&&&ｺｰﾙﾊﾟﾀｰﾝ1"
+CA_CALL_TONE="004&&&ｺｰﾙﾊﾟﾀｰﾝ1"
+
+###########################################################
+# [Ringtone Settings (Normal Call)] Ringtone (1)-(500) (VER2)
+#
+# Format: CA_CALL_TONE_VER2="<Station number>&&&<Ringtone>"
+#    Parameter 1: Station number : 3-5 digits
+#    Parameter 2: Ringtone   : 1-6: Call pattern 1-6 or 7: tremolo sound or 8: busy-tone or 9: on-hold sound or
+#                     10: operation sound or 11: error sound or 12: custom sound source (1)-(100)
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the ringtones (CA_CALL_TONE_VER2) to be set (max. 500)
+###########################################################
+CA_CALL_TONE_VER2="002&&&1"
+CA_CALL_TONE_VER2="003&&&1"
+CA_CALL_TONE_VER2="004&&&1"
+
+## All Page
+###########################################################
+# Unicast (1)-(500)
+#
+# Format: CA_ALL_PAGING_DST="<Station number>[&&&<Station number>...]"
+#    Parameter 1: Station number : 3-5 digits (max. 50)
+#
+# Note:
+# Parameters separated with "&&&"
+###########################################################
+CA_ALL_PAGING_DST=""
+
+
+###########################################################
+#                                                         #
+# Function Settings                                       #
+#                                                         #
+###########################################################
+
+## IX Support Tool Settings
+###########################################################
+# IX Support Tool setting flag (Function Settings)
+# 1: Already set via IX Support Tool or 0: Not set via IX Support Tool
+###########################################################
+FU_SET_FROM_SUPPORTSOFT="1"
+
+
+## Door Release Settings
+###########################################################
+# [Door Release Authorization] Authentication Key
+# 1-4 digits
+###########################################################
+FU_UNLOCK_KEY="0270"
+
+###########################################################
+# [Door Release Output Assignment] Contact Assignment (1)-(500)
+# [Door Release Output Assignment] Authentication Key (1)-(500)
+#
+# Format: FU_IP_UNLOCK_SET="<Station number>&&&<Contact Assignment>&&&<Key>"
+#    Parameter 1: Station number      : 3-5 digits
+#    Parameter 2: Contact Assignment  : 1: Originating Station or 2: Destination Station
+#    Parameter 3: Key        : 1-4 digits
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the door release settings (FU_IP_UNLOCK_SET) to be set (max. 500)
+#
+#  e.g. If the station number is 1100, Contact Assignment is Originating station and Key is 1111,
+#  it will be shown as "1100&&&1&&&1111."
+###########################################################
+FU_IP_UNLOCK_SET="002&&&2&&&7810"
+FU_IP_UNLOCK_SET="003&&&2&&&8678"
+FU_IP_UNLOCK_SET="004&&&2&&&3331"
+
+###########################################################
+# [Door Release Output Settings (same as Contact / Audio Output Settings)] (1)
+#
+# Format: FU_CONTACT_OUTPUT_1="<Output time>&&&<Usage>&&&<Contact name>"
+#    Parameter 1: Output time    : 0: Momentary or 200-300000
+# Note:
+# 200-2000msec / 200msec step 3000-300000msec / 1000msec step
+#    Parameter 2: Usage    : 1: Door release
+#    Parameter 3: Contact name    : * Currently not in use
+# 
+# Parameters separated with "&&&"
+###########################################################
+FU_CONTACT_OUTPUT_1="400&&&1&&&"
+
+
+## Contact Input Call
+###########################################################
+# [Master Station Call Group Assignment] Group Number
+# [Master Station Call Group Assignment] Priority
+#
+# Format: FU_IP_CONTACT_INPUT1_DST_GRUP="<Group Number>&&&<Priority>"
+#    Parameter 1: Group number  : 01-99
+#    Parameter 2: Priority      : 1: Normal or 2: Priority or 3: Urgent
+#
+# Note:
+# Parameters separated with "&&&"
+###########################################################
+FU_IP_CONTACT_INPUT1_DST_GRUP="&&&1"
+
+###########################################################
+# [Call Acknowledged Settings] Call Timeout [sec]
+# 10-600 or -1: Infinite
+###########################################################
+FU_CALL_SOUND_TIME="60"
+
+###########################################################
+# [Call Acknowledged Settings] Ringback Tone Count [time(s)]
+# 1-20 or 0: Infinite
+###########################################################
+FU_CALL_RING_TIME="0"
+
+###########################################################
+#  [Ringtone Settings (Option Input)] Ringtone (1)-(500)
+#
+# Format: FU_CONTACT_CALL_SOUND="<Station number>&&&<Ringtone>"
+#    Parameter 1: Station number : 3-5 digits
+#    Parameter 2: Ringtone   : ｺｰﾙﾊﾟﾀｰﾝ1-6 or ﾄﾚﾓﾛ音 or 話中音 or 保留音 or
+#                     操作音 or ｴﾗｰ音 or custom sound source (1)-(100)
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the ringtones (FU_CONTACT_CALL_SOUND) to be set (max. 500)
+###########################################################
+FU_CONTACT_CALL_SOUND="002&&&ｺｰﾙﾊﾟﾀｰﾝ2"
+FU_CONTACT_CALL_SOUND="003&&&ｺｰﾙﾊﾟﾀｰﾝ2"
+FU_CONTACT_CALL_SOUND="004&&&ｺｰﾙﾊﾟﾀｰﾝ2"
+
+###########################################################
+# [Ringtone Settings (Option Input)] Ringtone (1)-(500) (VER2)
+#
+# Format: FU_CONTACT_CALL_SOUND_VER2="<Station number>&&&<Ringtone>"
+#    Parameter 1: Station number : 3-5 digits
+#    Parameter 2: Ringtone   : 1-6: Call pattern 1-6 or 7: tremolo sound or 8: busy-tone or 9: on-hold sound or
+#                     10: operation sound or 11: error sound or 12: custom sound source (1)-(100)
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the ringtones (FU_CONTACT_CALL_SOUND_VER2) to be set (max. 500)
+###########################################################
+FU_CONTACT_CALL_SOUND_VER2="002&&&2"
+FU_CONTACT_CALL_SOUND_VER2="003&&&2"
+FU_CONTACT_CALL_SOUND_VER2="004&&&2"
+
+## Paging Settings
+###########################################################
+# [Paging Pretone Setting] Pretone
+# 1: ON or 2: OFF
+###########################################################
+FU_PAGING_NOTICE_TONE="1"
+
+###########################################################
+# [Paging Time Setting] Paging Timeout [sec]
+# 10-600
+###########################################################
+FU_PAGING_MAX="30"
+
+
+## Network Camera Integration
+###########################################################
+# [Network Camera Profile] Profile (1)-(50)
+#
+# Format: FU_NW_CAMERA_VIDEO_SET="<Network Camera Number>&&&<Network Camera Name>&&&<Profile>"
+#    Parameter 1: Network Camera Number  : 01-50 (Unique, corresponding to SI_OTHER_PRODUCT_BOOK Network Camera Number)
+#    Parameter 2: Network Camera Name  : 1-24 alphanumeric characters
+#    Parameter 3: Profile      : 1-64 alphanumeric characters (Profile obtained from Network Camera)
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the profils (FU_NW_CAMERA_VIDEO_SET) to be set (max. 50)
+###########################################################
+FU_NW_CAMERA_VIDEO_SET=""
+
+###########################################################
+# [Event Registry] Camera Name (1)-(50)
+# [Event Registry] Event (1)-(50)
+#
+# Format: FU_NW_CAMERA_INTERLOCK="<Network Camera Number>&&&<Network Camera Name>&&&<Event>"
+#    Parameter 1: Network Camera Number  : 01-50 (Unique, corresponding to SI_OTHER_PRODUCT_BOOK Network Camera Number)
+#    Parameter 2: Network Camera Name  : 1-24 alphanumeric characters
+#    Parameter 3: Event          : 1-255 alphanumeric characters (Event obtained from Network Camera)
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the events (FU_NW_CAMERA_INTERLOCK) to be set (max. 50)
+###########################################################
+FU_NW_CAMERA_INTERLOCK=""
+
+###########################################################
+# [Network Camera Event Tone] Network Camera Event Tone
+# ｺｰﾙﾊﾟﾀｰﾝ1-6 or ﾄﾚﾓﾛ音 or 話中音 or 保留音 or
+# 操作音 or ｴﾗｰ音 or custom sound source (1)-(100)
+###########################################################
+FU_NW_CAMERA_REPORT_TONE="ｺｰﾙﾊﾟﾀｰﾝ3"
+
+###########################################################
+# [Network Camera Event Tone] Network Camera Event Tone (VER2)
+# 1-6: Call pattern 1-6 or 7: tremolo sound or 8: busy-tone or 9: on-hold sound or
+# 10: operation sound or 11: error sound or 12: custom sound source (1)-(100)
+###########################################################
+FU_NW_CAMERA_REPORT_TONE_VER2="3"
+
+###########################################################
+# [Network Camera Event Tone] Event Tone Count [time(s)]
+# 1-20 or 0: Infinite
+###########################################################
+FU_NW_CAMERA_REPORT_TONE_COUNT="1"
+
+## E-mail Settings
+###########################################################
+# [Server Settings] SMTP Server
+# 1-255 alphanumeric characters
+###########################################################
+FU_SMTP_SERVER_NAME=""
+
+###########################################################
+# [Server Settings] SMTP Port
+# 1-65535
+###########################################################
+FU_SMTP_PORT_NO="25"
+
+###########################################################
+# [Server Settings] SMTP Encryption
+# 1: OFF or 2: TLS or 3: STARTTLS
+###########################################################
+FU_SMTP_CRYPT_METHOD="1"
+
+###########################################################
+#  [Authentication Settings] SMTP Authentication
+# 1: ON or 2: OFF
+###########################################################
+FU_SMTP_AUTHENTICATION="2"
+
+###########################################################
+# [Authentication Settings] Mode
+# 1: LOGIN or 2: CRAM-MD5
+###########################################################
+FU_SMTP_AUTH_MODE="1"
+
+###########################################################
+#  [Authentication Settings] ID
+# 1-64 alphanumeric characters
+###########################################################
+FU_AUTH_ID=""
+
+###########################################################
+#  [Authentication Settings] Password
+# 1-64 alphanumeric characters
+###########################################################
+FU_AUTH_PASSWORD=""
+
+###########################################################
+#  [E-mail Addresses] Destination 1
+# 1-64 alphanumeric characters
+###########################################################
+FU_DST_EMAIL_ADDR_1=""
+
+###########################################################
+#  [E-mail Addresses] Destination 2
+# 1-64 alphanumeric characters
+###########################################################
+FU_DST_EMAIL_ADDR_2=""
+
+###########################################################
+#  [E-mail Addresses] Destination 3
+# 1-64 alphanumeric characters
+###########################################################
+FU_DST_EMAIL_ADDR_3=""
+
+###########################################################
+#  [E-mail Addresses] Source Address
+# 1-64 alphanumeric characters
+###########################################################
+FU_DST_EMAIL_ADMIN_ADDR=""
+
+###########################################################
+# [E-mail Event Trigger] Normal call
+# [Subject Text] Normal call
+#
+# Format: FU_NORMAL_CALL="2&&&2&&&2&&&"
+#    Parameter 1: Normal call (1)  : 1: Enable or 2: Disable
+#    Parameter 2: Normal call (2)  : 1: Enable or 2: Disable
+#    Parameter 3: Normal call (3)  : 1: Enable or 2: Disable
+#    Parameter 4: Normal call subject: 1-64 alphanumeric characters
+#
+# Note:
+# Parameters separated with "&&&"
+###########################################################
+FU_NORMAL_CALL="2&&&2&&&2&&&"
+
+###########################################################
+# [E-mail Event Trigger] Priority call
+# [Subject Text] Priority call
+#
+# Format: FU_PRIOR_CALL="2&&&2&&&2&&&"
+#    Parameter 1: Priority call (1)  : 1: Enable or 2: Disable
+#    Parameter 2: Priority call (2)  : 1: Enable or 2: Disable
+#    Parameter 3: Priority call (3)  : 1: Enable or 2: Disable
+#    Parameter 4: Priority call subject: 1-64 alphanumeric characters
+#
+# Note:
+# Parameters separated with "&&&"
+###########################################################
+FU_PRIOR_CALL="2&&&2&&&2&&&"
+
+###########################################################
+# [E-mail Event Trigger] Urgent call
+# [Subject Text] Urgent call
+#
+# Format: FU_URGENT_CALL="2&&&2&&&2&&&"
+#    Parameter 1: Urgent call (1)  : 1: Enable or 2: Disable
+#    Parameter 2: Urgent call (2)  : 1: Enable or 2: Disable
+#    Parameter 3: Urgent call (3)  : 1: Enable or 2: Disable
+#    Parameter 4: Urgent call subject: 1-64 alphanumeric characters
+#
+# Note:
+# Parameters separated with "&&&"
+###########################################################
+FU_URGENT_CALL="2&&&2&&&2&&&"
+
+###########################################################
+# [E-mail Event Trigger] Door Release Activated
+# [Subject Text] Door Release Activated
+#
+# Format: FU_UNLOCK_STATE_NOTIFY="2&&&2&&&2&&&"
+#    Parameter 1: Door Release Activated (1)  : 1: Enable or 2: Disable
+#    Parameter 2: Door Release Activated (2)  : 1: Enable or 2: Disable
+#    Parameter 3: Door Release Activated (3)  : 1: Enable or 2: Disable
+#    Parameter 4: Door Release Activated subject: 1-64 alphanumeric characters
+#
+# Note:
+# Parameters separated with "&&&"
+###########################################################
+FU_UNLOCK_STATE_NOTIFY="2&&&2&&&2&&&"
+
+###########################################################
+# [E-mail Event Trigger] Call Failed
+# [Subject Text] Call Failed
+#
+# Format: FU_CALL_FAIL="2&&&2&&&2&&&"
+#    Parameter 1: Call Failed (1)  : 1: Enable or 2: Disable
+#    Parameter 2: Call Failed (2)  : 1: Enable or 2: Disable
+#    Parameter 3: Call Failed (3)  : 1: Enable or 2: Disable
+#    Parameter 4: Call Failed subject: 1-64 alphanumeric characters
+#
+# Note:
+# Parameters separated with "&&&"
+###########################################################
+FU_CALL_FAIL="2&&&2&&&2&&&"
+
+###########################################################
+# [E-mail Event Trigger] Error Occurred
+# [Subject Text] Error Occurred
+#
+# Format: FU_DATALINK_ERROR="2&&&2&&&2&&&"
+#    Parameter 1: Error Occurred (1)  : 1: Enable or 2: Disable
+#    Parameter 2: Error Occurred (2)  : 1: Enable or 2: Disable
+#    Parameter 3: Error Occurred (3)  : 1: Enable or 2: Disable
+#    Parameter 4: Error Occurred subject: 1-64 alphanumeric characters
+#
+# Note:
+# Parameters separated with "&&&"
+###########################################################
+FU_DATALINK_ERROR="2&&&2&&&2&&&"
+
+###########################################################
+# [E-mail Event Trigger] Station Restart
+# [Subject Text] Station Restart
+#
+# Format: FU_DEVICE_RESTART="2&&&2&&&2&&&"
+#    Parameter 1: Station Restart (1)  : 1: Enable or 2: Disable
+#    Parameter 2: Station Restart (2)  : 1: Enable or 2: Disable
+#    Parameter 3: Station Restart (3)  : 1: Enable or 2: Disable
+#    Parameter 4: Station Restart subject: 1-64 alphanumeric characters
+#
+# Note:
+# Parameters separated with "&&&"
+###########################################################
+FU_DEVICE_RESTART="2&&&2&&&2&&&"
+
+###########################################################
+# [E-mail Event Trigger] Periodic Log Transmission
+# [Subject Text] Periodic Log Transmission
+#
+# Format: FU_PERIODIC_SEND_LOG="2&&&2&&&2&&&"
+#    Parameter 1: Periodic Log Transmission (1)  : 1: Enable or 2: Disable
+#    Parameter 2: Periodic Log Transmission (2)  : 1: Enable or 2: Disable
+#    Parameter 3: Periodic Log Transmission (3)  : 1: Enable or 2: Disable
+#    Parameter 4: Periodic Log Transmission subject: 1-64 alphanumeric characters
+#
+# Note:
+# Parameters separated with "&&&"
+###########################################################
+FU_PERIODIC_SEND_LOG="2&&&2&&&2&&&"
+
+###########################################################
+# [E-mail Event Trigger] Periodic Log Transmit Time (1) (Hour, Minute)
+#  00:00-23:59
+###########################################################
+FU_DST_EMAIL_ADDR_1_SEND_TIME="00:00"
+
+###########################################################
+# [E-mail Event Trigger] Periodic Log Transmit Interval (1) [Day]
+#  1-7
+###########################################################
+FU_DST_EMAIL_ADDR_1_SEND_INTERVAL="1"
+
+###########################################################
+# [E-mail Event Trigger] Periodic Log Transmit Time (2) (Hour, Minute)
+#  00:00-23:59
+###########################################################
+FU_DST_EMAIL_ADDR_2_SEND_TIME="00:00"
+
+###########################################################
+# [E-mail Event Trigger] Periodic Log Transmit Interval (2) [Day]
+#  1-7
+###########################################################
+FU_DST_EMAIL_ADDR_2_SEND_INTERVAL="1"
+
+###########################################################
+# [E-mail Event Trigger] Periodic Log Transmit Time (3) (Hour, Minute)
+#  00:00-23:59
+###########################################################
+FU_DST_EMAIL_ADDR_3_SEND_TIME="00:00"
+
+###########################################################
+# [E-mail Event Trigger] Periodic Log Transmit Interval (3) [Day]
+#  1-7
+###########################################################
+FU_DST_EMAIL_ADDR_3_SEND_INTERVAL="1"
+
+
+## CGI Integration
+###########################################################
+# CGI Functionality
+# 1: Enable or 2: Disable
+###########################################################
+FU_USE_CGI="2"
+
+
+## SIF Integration
+###########################################################
+# SIF Functionality
+# 1: Enable or 2: Disable
+###########################################################
+FU_USE_SIF="2"
+
+
+###########################################################
+#                                                         #
+# Transfer Settings                                       #
+#                                                         #
+###########################################################
+
+## IX Support Tool Settings
+###########################################################
+# IX Support Tool setting flag (Transfer Settings)
+# 1: Already set via IX Support Tool or 0: Not set via IX Support Tool
+###########################################################
+TS_SET_FROM_SUPPORTSOFT="1"
+
+
+## Absent Transfer Settings
+###########################################################
+# Absent Transfer
+# 1: Enable or 2: Disable
+###########################################################
+TS_ABSENCE_TRANSFER="2"
+
+###########################################################
+# Transfer to Station Number
+# 3-5 digits
+###########################################################
+TS_ABSENCE_TRANSFER_DST_NODE_NO=""
+
+
+## Delay Transfer Settings
+###########################################################
+# Delay Transfer
+# 1: Enable or 2: Disable
+###########################################################
+TS_DELAY_TRANSFER="2"
+
+###########################################################
+# Delay Time [sec]
+# 1-300
+###########################################################
+TS_DELAY_TIME="30"
+
+###########################################################
+# Transfer to Station Number
+# 3-5 digits
+###########################################################
+TS_DELAY_TRANSFER_DST_NODE_NO=""
+
+
+## Transfer Schedule Settings
+###########################################################
+# Transfer Schedule
+# 1: Enable or 2: Disable
+###########################################################
+TS_CALL_REPORT_TRANSFER="2"
+
+###########################################################
+# Transfer to Station Number
+# 3-5 digits
+###########################################################
+TS_SCHEDULE_TRANSFER_DST_NODE_NO=""
+
+###########################################################
+#  [Weekly Schedule] Transfer schedule 1  Start time - Hour:Minute
+#  [Weekly Schedule] Transfer schedule 1  End time - Hour:Minute
+# 
+# Format: TS_WEEKLY_SCHED_TRANSFER_<Day of week>="<Start Time>&&&<End Time>"
+#    Parameter 1: Start time  : 00-23 (Hour):00-59 (Minute)
+#    Parameter 2: End time  : 00-23 (Hour):00-59 (Minute)
+# 
+# e.g. "From 12:00 to 13:00" will be shown as "12:00&&&13:00."
+###########################################################
+# Sunday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_SUN=""
+
+###########################################################
+# Monday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_MON=""
+
+###########################################################
+# Tuesday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_TUE=""
+
+###########################################################
+# Wednesday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_WED=""
+
+###########################################################
+# Thursday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_THR=""
+
+###########################################################
+# Friday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_FRI=""
+
+###########################################################
+# Saturday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_SAT=""
+
+
+###########################################################
+#                                                         #
+# Station Hardware Settings                               #
+#                                                         #
+###########################################################
+
+## IX Support Tool Settings
+###########################################################
+# IX Support Tool setting flag (Station Hardware Settings)
+# 1: Already set via IX Support Tool or 0: Not set via IX Support Tool
+###########################################################
+DS_SET_FROM_SUPPORTSOFT="1"
+
+
+## Speed Dial Button Settings
+###########################################################
+# [Destination Assignment] Mode Selection (1)-(6)
+# [Destination Assignment] Group Number (1)-(6)
+# [Destination Assignment] Station Number (1)-(6)
+# [Destination Assignment] Priority (1)-(6)
+# 
+# Format: DS_SPEEDDIAL_BTN_1="<Mode Selection>&&&<Group Number>&&&<Station Number>&&&<Priority>"
+#    Parameter 1: Mode selection  : 1: Group call or 2: Individual call or 3: Group page or 4: All Page
+#    Parameter 2: Group number    : 01-99
+#    Parameter 3: Station number      : 3-5 digits
+#    Parameter 4: Priority        : 1: Normal or 2: Priority or 3: Urgent
+# 
+# Note:
+# Parameters separated with "&&&"
+###########################################################
+DS_SPEEDDIAL_BTN_1=""
+DS_SPEEDDIAL_BTN_2=""
+DS_SPEEDDIAL_BTN_3=""
+DS_SPEEDDIAL_BTN_4=""
+DS_SPEEDDIAL_BTN_5=""
+DS_SPEEDDIAL_BTN_6=""
+
+
+## Privacy Setting
+###########################################################
+# Privacy
+# 1: Enable or 2: Disable
+###########################################################
+DS_PRIVACY_SETTING="2"
+
+
+## Volume Settings
+###########################################################
+# [Volume Settings] Handset Transmit Volume
+# 1-10
+###########################################################
+DS_HS_SND_SOUND_VOLUME="10"
+
+###########################################################
+# [Volume Settings] Handset Receive Volume
+# 1-10
+###########################################################
+DS_HS_RCV_SOUND_VOLUME="6"
+
+###########################################################
+# [Volume Settings] Hands-free Transmit Volume
+# 1-10
+###########################################################
+DS_HF_SND_SOUND_VOLUME="10"
+
+###########################################################
+# [Volume Settings] Hands-free Receive Volume
+# 1-10
+###########################################################
+DS_HF_RCV_SOUND_VOLUME="6"
+
+###########################################################
+# Ringtone Volume
+#  0-10
+###########################################################
+DS_CALL_SOUND_VOLUME="6"
+
+###########################################################
+# Button Feedback Tone
+# 1: Enable or 2: Disable
+###########################################################
+DS_OPERATION_TONE="2"
+
+
+## Communication Settings
+###########################################################
+# Talk Timeout [sec]
+# 30-600
+###########################################################
+DS_MAX_CALL_TIME="60"
+
+###########################################################
+# Force Push-to-talk
+# 1: Enable or 2: Disable
+###########################################################
+DS_CONTINUOUS_PRESSTALK="2"
+
+
+## Monitor Setting
+###########################################################
+# Monitor Timeout [sec]
+# 10-600
+###########################################################
+DS_MAX_MONITOR_TIME="60"
+
+
+## Master Station Display Settings
+###########################################################
+# Brightness
+# 1-10
+###########################################################
+DS_LCD_BRIGHTNESS="6"
+
+###########################################################
+# Time Format
+# 1: mm/dd/yyyy (12h) or 2: mm/dd/yyyy (24h) or 3: dd/mm/yyyy (12h) or
+# 4: dd/mm/yyyy (24h) or 5: yyyy/mm/dd (12h) or 6: yyyy/mm/dd (24h)
+###########################################################
+DS_TIME_DISPLAY="1"
+
+###########################################################
+# Standby LED State
+# 1: Light ON or 2: Light OFF
+###########################################################
+DS_NORMAL_TIME_STATUS_LED="1"
