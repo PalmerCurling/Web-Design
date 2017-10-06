@@ -15,14 +15,14 @@ BI_SET_FROM_SUPPORTSOFT="1"
 # IX Support Tool setting memo
 #
 ###########################################################
-BI_COMMUNICATION_MEMO_A="admin"
-BI_COMMUNICATION_MEMO_B="admin"
+BI_COMMUNICATION_MEMO_A=""
+BI_COMMUNICATION_MEMO_B=""
 
 ###########################################################
 # Association key
 # MAC Address
 ###########################################################
-BI_ASSOCIATION_KEY="00:0B:AA:16:79:F0"
+BI_ASSOCIATION_KEY="00:0B:AA:16:79:F1"
 
 ###########################################################
 # Station type
@@ -36,13 +36,13 @@ BI_DEVICE_TYPE="1"
 # Number
 # 3-5 digits
 ###########################################################
-BI_NODE_NO="004"
+BI_NODE_NO="002"
 
 ###########################################################
 # Name
 # 1-24 alphanumeric characters
 ###########################################################
-BI_DEVICE_NAME="Elevator Lobby"
+BI_DEVICE_NAME="Employee Lounge Balcony"
 
 ###########################################################
 # Name (furigana)
@@ -261,7 +261,7 @@ NE_ADDRESS_SET_METHOD="2"
 # [IPv4 Address] IP Address
 # 1.0.0.0-223.255.255.255
 ###########################################################
-NE_IPV4_SRC_ADDR="10.225.92.63"
+NE_IPV4_SRC_ADDR="10.225.92.61"
 
 ###########################################################
 # [IPv4 Address] Subnet Mask
@@ -273,7 +273,7 @@ NE_SUBNET_MASK="255.255.255.0"
 # [IPv4 Address] Default Gateway
 # 1.0.0.0-223.255.255.255
 ###########################################################
-NE_IPV4_DEFAULT_GATEWAY="10.225.92.1"
+NE_IPV4_DEFAULT_GATEWAY=""
 
 ###########################################################
 # [IPv6 Address] IP Address
@@ -822,7 +822,7 @@ FU_UNLOCK_SOUND_VER2="10"
 # [Door Release Authorization] Authentication Key
 # 1-4 digits
 ###########################################################
-FU_UNLOCK_KEY="3331"
+FU_UNLOCK_KEY="7810"
 
 ###########################################################
 # [Door Release Output Settings (same as Contact / Audio Output Settings)] (1)

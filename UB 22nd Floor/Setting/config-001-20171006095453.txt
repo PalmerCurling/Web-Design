@@ -15,20 +15,20 @@ BI_SET_FROM_SUPPORTSOFT="1"
 # IX Support Tool setting memo
 #
 ###########################################################
-BI_COMMUNICATION_MEMO_A="admin"
-BI_COMMUNICATION_MEMO_B="admin"
+BI_COMMUNICATION_MEMO_A=""
+BI_COMMUNICATION_MEMO_B=""
 
 ###########################################################
 # Association key
 # MAC Address
 ###########################################################
-BI_ASSOCIATION_KEY="00:0B:AA:16:79:F0"
+BI_ASSOCIATION_KEY="00:0B:AA:17:3D:1D"
 
 ###########################################################
 # Station type
 # 1: Video Door Station or 2: Audio Only Door Station or 3: Master Station
 ###########################################################
-BI_DEVICE_TYPE="1"
+BI_DEVICE_TYPE="3"
 
 
 ## Identification
@@ -36,13 +36,13 @@ BI_DEVICE_TYPE="1"
 # Number
 # 3-5 digits
 ###########################################################
-BI_NODE_NO="004"
+BI_NODE_NO="001"
 
 ###########################################################
 # Name
 # 1-24 alphanumeric characters
 ###########################################################
-BI_DEVICE_NAME="Elevator Lobby"
+BI_DEVICE_NAME="Master Station1"
 
 ###########################################################
 # Name (furigana)
@@ -216,7 +216,6 @@ BI_TIMEZONE_VER2="19"
 BI_SUMMERTIME_FLAG="1"
 
 
-
 ###########################################################
 # [NTP] Enable NTP
 # 1: Yes or 2: No
@@ -261,7 +260,7 @@ NE_ADDRESS_SET_METHOD="2"
 # [IPv4 Address] IP Address
 # 1.0.0.0-223.255.255.255
 ###########################################################
-NE_IPV4_SRC_ADDR="10.225.92.63"
+NE_IPV4_SRC_ADDR="10.225.92.60"
 
 ###########################################################
 # [IPv4 Address] Subnet Mask
@@ -379,108 +378,16 @@ NE_SIP_HEALTCH_CHECK_TIMER="90"
 
 ## Multicast Address
 ###########################################################
-# For Call - [IPv4]
+# For Paging - [IPv4]
 # 224.0.0.0-239.255.255.255
 ###########################################################
 NE_MCAST_IPV4_ADDR=""
 
 ###########################################################
-# For Call - [IPv6]
+# For Paging - [IPv6]
 # FF10::0-FF1F:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
 ###########################################################
 NE_MCAST_IPV6_ADDR=""
-
-
-## Video
-###########################################################
-# [Video Encoder 1] Coding System
-# 1: H.264 / AVC or 2: Motion-JPEG
-###########################################################
-NE_VIDEO_1_ENCODER="1"
-
-###########################################################
-# [Video Encoder 1] Resolution
-# 1: 320x240 (QVGA) or 2: 640x480 (VGA)
-###########################################################
-NE_VIDEO_1_RESOLUTION="1"
-
-###########################################################
-# [Video Encoder 1] Select Quality [Motion-JPEG]
-# 1-10
-###########################################################
-NE_VIDEO_1_JPEG_QUALTIY="6"
-
-###########################################################
-# [Video Encoder 1] Select Profile [H.264 / AVC]
-# 1: Baseline or 2: Main or 3: High
-###########################################################
-NE_VIDEO_1_H264_QUALTIY="2"
-
-###########################################################
-# [Video Encoder 1] I-picture interval [H.264 / AVC]
-# 1-100
-###########################################################
-NE_VIDEO_1_I_PICTURE_INTERVAL="15"
-
-###########################################################
-# [Video Encoder 1] Frame Rate [fps]
-# 1 or 3 or 5 or 7.5 or 10 or 15 or 20 or 30
-###########################################################
-NE_VIDEO_1_FRAMERATE="15"
-
-###########################################################
-# [Video Encoder 1] Bit rate [kbps] [H.264 / AVC]
-# 64 or 128 or 256 or 384 or 512 or 768 or 1024 or 2048
-###########################################################
-NE_VIDEO_1_BITRATE="1024"
-
-###########################################################
-# [Video Encoder 2] Second Video Encoder
-# 1: Enable or 2: Disable
-###########################################################
-NE_VIDEO_DUAL_STREAM="1"
-
-###########################################################
-# [Video Encoder 2] Coding System
-# 1: H.264 / AVC or 2: Motion-JPEG
-###########################################################
-NE_VIDEO_2_ENCODER="1"
-
-###########################################################
-# [Video Encoder 2] Resolution
-# 1: 320x240 (QVGA) or 2: 640x480 (VGA)
-###########################################################
-NE_VIDEO_2_RESOLUTION="1"
-
-###########################################################
-# [Video Encoder 2] Select Quality [Motion-JPEG]
-# 1-10
-###########################################################
-NE_VIDEO_2_JPEG_QUALTIY="6"
-
-###########################################################
-# [Video Encoder 2] Select Profile [H.264 / AVC]
-# 1: Baseline or 2: Main or 3: High
-###########################################################
-NE_VIDEO_2_H264_QUALTIY="2"
-
-###########################################################
-# [Video Encoder 2] I-picture interval [H.264 / AVC]
-# 1-100
-###########################################################
-NE_VIDEO_2_I_PICTURE_INTERVAL="15"
-
-###########################################################
-# [Video Encoder 2] Frame Rate [fps]
-# 1 or 3 or 5 or 7.5 or 10 or 15 or 20 or 30
-###########################################################
-NE_VIDEO_2_FRAMERATE="15"
-
-###########################################################
-# [Video Encoder 2] Bit rate [kbps] [H.264 / AVC]
-# 64 or 128 or 256 or 384 or 512 or 768 or 1024 or 2048
-###########################################################
-NE_VIDEO_2_BITRATE="1024"
 
 
 ## Audio
@@ -521,12 +428,6 @@ NE_MAX_ACCUMELATION_PKT="3"
 # 0x00-0xFF
 ###########################################################
 NE_AUDIO_TOS_VALUE="0x00"
-
-###########################################################
-# TOS Value (Video)
-# 0x00-0xFF
-###########################################################
-NE_VIDEO_TOS_VALUE="0x00"
 
 ###########################################################
 # TOS Value (SIP)
@@ -612,6 +513,7 @@ NE_NTP_SYNC_INTERVAL="24"
 ###########################################################
 SI_SET_FROM_SUPPORTSOFT="1"
 
+
 ## Location Registry
 ###########################################################
 # Location Name (1)-(50)
@@ -620,6 +522,95 @@ SI_SET_FROM_SUPPORTSOFT="1"
 # Indicates the locations (SI_NODE_LOCATION) to be set (max. 50)
 ###########################################################
 SI_NODE_LOCATION=""
+
+
+## Address book
+###########################################################
+# [Station List] (1)-(500)
+# 
+# Format: SI_ADDRESS_BOOK="<Station number>&&&<Station name>&&&<Station name (furigana)>&&&<Location>&&&<Type>&&&<IPv4 Address>&&&<IPv6 Address>"
+#    Parameter 1: Station number:      : 3-5 digits
+#    Parameter 2: Station name      : 1-24 alphanumeric characters
+#    Parameter 3: Station name (furigana) : 1-24 alphanumeric characters
+#    Parameter 4: Location      : Location (1)-(50)
+#    Parameter 5: Type          : 1: Door Station or 2: Master Station
+#    Parameter 6: IPv4 Address     : 1.0.0.0-223.255.255.255
+#    Parameter 7: IPv6 Address     : 2000::0-3FFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
+#                                    or FD00::0-FDFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
+# 
+# Note:
+# Parameters separated with "&&&"
+# Indicates the stations (SI_ADDRESS_BOOK) to be set (max. 500)
+###########################################################
+SI_ADDRESS_BOOK="002&&&Employee Lounge Balcony&&&&&&&&&1&&&10.225.92.61&&&"
+SI_ADDRESS_BOOK="003&&&Lobby Balcony&&&&&&&&&1&&&10.225.92.62&&&"
+SI_ADDRESS_BOOK="004&&&Elevator Lobby&&&&&&&&&1&&&10.225.92.63&&&"
+
+###########################################################
+# [Network Camera List] (1)-(50)
+# 
+# Format: SI_OTHER_PRODUCT_BOOK="<Network Camera Number>&&&<Network Camera Name>&&&<Network camera name (furigana)>&&&<ID>&&&<Password>&&&<IPv4 Address>&&&<IPv6 Address>"
+#    Parameter 1: Network Camera Number      : 01-50
+#    Parameter 2: Network Camera Name      : 1-24 alphanumeric characters
+#    Parameter 3: Network camera name (furigana) : 1-24 alphanumeric characters
+#    Parameter 4: ID                 : 1-32 alphanumeric characters
+#    Parameter 5: Password            : 1-32 alphanumeric characters
+#    Parameter 6: IPv4 Address          : 1.0.0.0-223.255.255.255
+#    Parameter 7: IPv6 Address          : ::FF:0-FEFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
+# 
+# Note:
+# Parameters separated with "&&&"
+# Indicates the network cameras (SI_OTHER_PRODUCT_BOOK) to be set (max. 50)
+###########################################################
+SI_OTHER_PRODUCT_BOOK=""
+
+## Group
+###########################################################
+# [Group list] (1)-(50)
+# 
+# Format: SI_CALL_GROUP_INFO="<Group number>&&&<Group name>&&&<Group name (furigana)>"
+#    Parameter 1: Group number      : 01-99
+#    Parameter 2: Group name      : 1-24 alphanumeric characters
+#    Parameter 3: Group name (furigana) : 1-24 alphanumeric characters
+# 
+# Note:
+# Parameters separated with "&&&"
+# Indicates the groups (SI_CALL_GROUP_INFO) to be set (max. 50)
+###########################################################
+SI_CALL_GROUP_INFO=""
+
+###########################################################
+# [Unicast Group Composition] Station (1)-(500)
+# 
+# Format: SI_UNI_SET_CALL_GROUP_ORG="<Station number>&&&<Group number>[&&&<Group number>...]"
+#    Parameter 1: Station number:    : 3-5 digits
+#    Parameter 2: Group number  :01-99 (Multiple selection is acceptable (up to 50))
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the stations (SI_UNI_SET_CALL_GROUP_ORG) to be set (max. 500)
+#  e.g. If a station with station number 311 belongs to Group number 11 and Group number 44,
+#  it will be shown as "311&&&11&&&44."
+# * Same station cannot be in both communication types per group.
+###########################################################
+SI_UNI_SET_CALL_GROUP_ORG=""
+
+###########################################################
+# [Multicast Group Composition] Station (1)-(500)
+# 
+# Format: SI_MULTI_CALL_GROUP_ORG="<Station number>&&&<Group number>[&&&<Group number>...]"
+#    Parameter 1: Station number:    : 3-5 digits
+#    Parameter 2: Group number  : 01-99 (Multiple selection is acceptable (up to 50))
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the stations (SI_MULTI_CALL_GROUP_ORG) to be set (max. 500)
+#  e.g. If a station with station number 311 belongs to Group number 22 and Group number 33,
+#  it will be shown as "311&&&22&&&33."
+# * Same station cannot be in both communication types per group.
+###########################################################
+SI_MULTI_CALL_GROUP_ORG=""
+
 
 ## Custom Sound Registry
 ###########################################################
@@ -683,17 +674,9 @@ CU_CONTACT_OUTPUT_1_OUTPUT_TIME="400"
 
 ###########################################################
 # [Relay Output Specifications] Usage (1)
-# 1: Door release or 3: Paging control or 4: Contact Input Call / Communication State
+# 1: Door release
 ###########################################################
 CU_CONTACT_OUTPUT_1_USAGE="1"
-
-###########################################################
-# [Audio Output Specifications] Audio Output
-# 1: Built-in Speaker for communication and paging or
-# 2: Audio Output for communication and paging or
-# 3: Built-in Speaker for communication, Audio Output for paging
-###########################################################
-CU_AUDIO_OUTPUT="1"
 
 
 ###########################################################
@@ -710,84 +693,63 @@ CU_AUDIO_OUTPUT="1"
 CA_SET_FROM_SUPPORTSOFT="1"
 
 
-## Called Stations
+## Incoming call
 ###########################################################
-# [Call Button Assignment] (1)-(20)
+# [Call Answer Settings] Auto Answer
+# 1: ON or 0: OFF
+###########################################################
+CA_AUTO_ANSWER="0"
+
+###########################################################
+# Ringtone Count [time(s)]
+# 1-20 or 0: Infinite
+###########################################################
+CA_RINGING_COUNT="0"
+
+###########################################################
+# [Ringtone Settings (Normal Call)] Ringtone (1)-(500)
 #
-# Format: CA_DP_CALL_DST="001&&&192.168.1.160&&&&&&1"
-#    Parameter 1: Station number    : 3-5 digits
-#    Parameter 2: IPv4 Address   : 1.0.0.0-223.255.255.255
-#    Parameter 3: IPv6 Address   : 2000::0-3FFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
-#                                  or FD00::0-FDFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
-#    Parameter 4: Protocol    : 1: Unicast or 2: Multicast
+# Format: CA_CALL_TONE="<Station number>&&&<Ringtone>"
+#    Parameter 1: Station number : 3-5 digits
+#    Parameter 2: Ringtone   : ｺｰﾙﾊﾟﾀｰﾝ1-6 or ﾄﾚﾓﾛ音 or 話中音 or 保留音 or
+#                     操作音 or ｴﾗｰ音 or custom sound source (1)-(100)
 #
 # Note:
 # Parameters separated with "&&&"
-# Indicate called stations (Max. 20 per group)
+# Indicates the ringtones (CA_CALL_TONE) to be set (max. 500)
 ###########################################################
-CA_DP_CALL_DST="001&&&10.225.92.60&&&&&&1"
+CA_CALL_TONE="002&&&ｺｰﾙﾊﾟﾀｰﾝ1"
+CA_CALL_TONE="003&&&ｺｰﾙﾊﾟﾀｰﾝ1"
+CA_CALL_TONE="004&&&ｺｰﾙﾊﾟﾀｰﾝ1"
 
 ###########################################################
-# [Priority Setting] Priority
-# 1: Normal or 2: Priority or 3: Urgent
+# [Ringtone Settings (Normal Call)] Ringtone (1)-(500) (VER2)
+#
+# Format: CA_CALL_TONE_VER2="<Station number>&&&<Ringtone>"
+#    Parameter 1: Station number : 3-5 digits
+#    Parameter 2: Ringtone   : 1-6: Call pattern 1-6 or 7: tremolo sound or 8: busy-tone or 9: on-hold sound or
+#                     10: operation sound or 11: error sound or 12: custom sound source (1)-(100)
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the ringtones (CA_CALL_TONE_VER2) to be set (max. 500)
 ###########################################################
-CA_DP_CALL_PRIORITY="1"
+CA_CALL_TONE_VER2="002&&&1"
+CA_CALL_TONE_VER2="003&&&1"
+CA_CALL_TONE_VER2="004&&&1"
 
+## All Page
+###########################################################
+# Unicast (1)-(500)
+#
+# Format: CA_ALL_PAGING_DST="<Station number>[&&&<Station number>...]"
+#    Parameter 1: Station number : 3-5 digits (max. 50)
+#
+# Note:
+# Parameters separated with "&&&"
+###########################################################
+CA_ALL_PAGING_DST=""
 
-## Call Origination
-###########################################################
-#  [Call Acknowledged Settings] Ringback Tone
-# ｺｰﾙﾊﾟﾀｰﾝ1-6 or ﾄﾚﾓﾛ音 or 話中音 or 保留音 or
-# 操作音 or ｴﾗｰ音 or custom sound source (1)-(100)
-###########################################################
-CA_RING_CONF_TONE="ｺｰﾙﾊﾟﾀｰﾝ1"
-
-###########################################################
-#  [Call Acknowledged Settings] Ringback Tone (VER2)
-# 1-6: Call pattern 1-6 or 7: tremolo sound or 8: busy-tone or 9: on-hold sound or
-# 10: operation sound or 11: error sound or 12: custom sound source (1)-(100)
-###########################################################
-CA_RING_CONF_TONE_VER2="1"
-
-###########################################################
-# [Call Acknowledged Settings] Call Timeout [sec]
-# 10-600 or -1: Infinite
-###########################################################
-CA_RING_TIME="60"
-
-###########################################################
-# [Call Acknowledged Settings] Ringback Tone Count [time(s)]
-# 0: Infinite or 1-20
-###########################################################
-CA_RING_COUNT="0"
-
-###########################################################
-# [Call Acknowledged Settings] Busy Tone
-# ｺｰﾙﾊﾟﾀｰﾝ1-6 or ﾄﾚﾓﾛ音 or 話中音 or 保留音 or
-# 操作音 or ｴﾗｰ音 or custom sound source (1)-(100)
-###########################################################
-CA_CALL_BUSY_TONE="話中音"
-
-###########################################################
-# [Call Acknowledged Settings] Busy Tone (VER2)
-# 1-6: Call pattern 1-6 or 7: tremolo sound or 8: busy-tone or 9: on-hold sound or
-# 10: operation sound or 11: error sound or 12: custom sound source (1)-(100)
-###########################################################
-CA_CALL_BUSY_TONE_VER2="8"
-
-###########################################################
-# [Call Acknowledged Settings] Error Tone (Call failed)
-# ｺｰﾙﾊﾟﾀｰﾝ1-6 or ﾄﾚﾓﾛ音 or 話中音 or 保留音 or
-# 操作音 or ｴﾗｰ音 or custom sound source (1)-(100)
-###########################################################
-CA_CALL_ERR_TONE="ｴﾗｰ音"
-
-###########################################################
-# [Call Acknowledged Settings] Error Tone (Call failed) (VER2)
-# 1-6: Call pattern 1-6 or 7: tremolo sound or 8: busy-tone or 9: on-hold sound or
-# 10: operation sound or 11: error sound or 12: custom sound source (1)-(100)
-###########################################################
-CA_CALL_ERR_TONE_VER2="11"
 
 ###########################################################
 #                                                         #
@@ -805,33 +767,39 @@ FU_SET_FROM_SUPPORTSOFT="1"
 
 ## Door Release Settings
 ###########################################################
-# [Door Release Tone] Door Release Operating Tone
-# なし or ｺｰﾙﾊﾟﾀｰﾝ1-6 or ﾄﾚﾓﾛ音 or 話中音 or
-# 保留音 or 操作音 or ｴﾗｰ音 or custom sound source (1)-(100)
-###########################################################
-FU_UNLOCK_SOUND="操作音"
-
-###########################################################
-# [Door Release Tone] Door Release Operating Tone (VER2)
-# 0: None or 1-6: Call pattern 1-6 or 7: tremolo sound or 8: busy-tone or
-# 9: on-hold sound or 10: operation sound or 11: error sound or 12: custom sound source (1)-(100)
-###########################################################
-FU_UNLOCK_SOUND_VER2="10"
-
-###########################################################
 # [Door Release Authorization] Authentication Key
 # 1-4 digits
 ###########################################################
-FU_UNLOCK_KEY="3331"
+FU_UNLOCK_KEY="0270"
+
+###########################################################
+# [Door Release Output Assignment] Contact Assignment (1)-(500)
+# [Door Release Output Assignment] Authentication Key (1)-(500)
+#
+# Format: FU_IP_UNLOCK_SET="<Station number>&&&<Contact Assignment>&&&<Key>"
+#    Parameter 1: Station number      : 3-5 digits
+#    Parameter 2: Contact Assignment  : 1: Originating Station or 2: Destination Station
+#    Parameter 3: Key        : 1-4 digits
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the door release settings (FU_IP_UNLOCK_SET) to be set (max. 500)
+#
+#  e.g. If the station number is 1100, Contact Assignment is Originating station and Key is 1111,
+#  it will be shown as "1100&&&1&&&1111."
+###########################################################
+FU_IP_UNLOCK_SET="002&&&2&&&7810"
+FU_IP_UNLOCK_SET="003&&&2&&&8678"
+FU_IP_UNLOCK_SET="004&&&2&&&3331"
 
 ###########################################################
 # [Door Release Output Settings (same as Contact / Audio Output Settings)] (1)
 #
 # Format: FU_CONTACT_OUTPUT_1="<Output time>&&&<Usage>&&&<Contact name>"
-#    Parameter 1: Output time    :0: Momentary or 200-300000
+#    Parameter 1: Output time    : 0: Momentary or 200-300000
 # Note:
 # 200-2000msec / 200msec step 3000-300000msec / 1000msec step
-#    Parameter 2: Usage    : 1: Door release or 3: Paging control or 4: Contact Input Call / Communication State
+#    Parameter 2: Usage    : 1: Door release
 #    Parameter 3: Contact name    : * Currently not in use
 # 
 # Parameters separated with "&&&"
@@ -841,60 +809,17 @@ FU_CONTACT_OUTPUT_1="400&&&1&&&"
 
 ## Contact Input Call
 ###########################################################
-# [Call Setting] (1)-(20) Group D01-D09
-# 
-# Format: FU_DP_CONTACT_GROUP01="170&&&192.168.1.170&&&&&&1"
-# Format: FU_DP_CONTACT_GROUP02="171&&&192.168.1.171&&&&&&1"
-# Format: FU_DP_CONTACT_GROUP03="172&&&192.168.1.172&&&&&&1"
-# Format: FU_DP_CONTACT_GROUP04="173&&&192.168.1.173&&&&&&1"
-# Format: FU_DP_CONTACT_GROUP05="174&&&192.168.1.174&&&&&&1"
-# Format: FU_DP_CONTACT_GROUP06="175&&&192.168.1.175&&&&&&1"
-# Format: FU_DP_CONTACT_GROUP07="176&&&192.168.1.176&&&&&&1"
-# Format: FU_DP_CONTACT_GROUP08="177&&&192.168.1.177&&&&&&1"
-# Format: FU_DP_CONTACT_GROUP09="178&&&192.168.1.178&&&&&&1"
-#    Parameter 1: Station number    : 3-5 digits
-#    Parameter 2: IPv4 Address   : 1.0.0.0-223.255.255.255
-#    Parameter 3: IPv6 Address   : 2000::0-3FFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
-#                                  or FD00::0-FDFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
-#    Parameter 4: Protocol    : 1: Unicast or 2: Multicast
+# [Master Station Call Group Assignment] Group Number
+# [Master Station Call Group Assignment] Priority
+#
+# Format: FU_IP_CONTACT_INPUT1_DST_GRUP="<Group Number>&&&<Priority>"
+#    Parameter 1: Group number  : 01-99
+#    Parameter 2: Priority      : 1: Normal or 2: Priority or 3: Urgent
 #
 # Note:
 # Parameters separated with "&&&"
-# Indicate called stations (Max. 20 per group)
 ###########################################################
-FU_DP_CONTACT_GROUP01=""
-FU_DP_CONTACT_GROUP02=""
-FU_DP_CONTACT_GROUP03=""
-FU_DP_CONTACT_GROUP04=""
-FU_DP_CONTACT_GROUP05=""
-FU_DP_CONTACT_GROUP06=""
-FU_DP_CONTACT_GROUP07=""
-FU_DP_CONTACT_GROUP08=""
-FU_DP_CONTACT_GROUP09=""
-
-###########################################################
-#  [Door Station Call Group Assignment] (1)
-#
-# Format: FU_DP_CONTACT_INPUT1_DST_GRUP="01&&&1"
-#    Parameter 1: Group number  : 01-09
-#    Parameter 2: Priority      : 1: Normal or 2: Priority or 3: Urgent
-#
-###########################################################
-FU_DP_CONTACT_INPUT1_DST_GRUP="01&&&1"
-
-###########################################################
-# [Call Acknowledged Settings] Ringback Tone
-# ｺｰﾙﾊﾟﾀｰﾝ1-6 or ﾄﾚﾓﾛ音 or 話中音 or 保留音 or
-# 操作音 or ｴﾗｰ音 or custom sound source (1)-(100)
-###########################################################
-FU_CALL_TONE_KIND="ｺｰﾙﾊﾟﾀｰﾝ2"
-
-###########################################################
-# [Call Acknowledged Settings] Ringback Tone (VER2)
-# 1-6: Call pattern 1-6 or 7: tremolo sound or 8: busy-tone or 9: on-hold sound or
-# 10: operation sound or 11: error sound or 12: custom sound source (1)-(100)
-###########################################################
-FU_CALL_TONE_KIND_VER2="2"
+FU_IP_CONTACT_INPUT1_DST_GRUP="&&&1"
 
 ###########################################################
 # [Call Acknowledged Settings] Call Timeout [sec]
@@ -906,8 +831,39 @@ FU_CALL_SOUND_TIME="60"
 # [Call Acknowledged Settings] Ringback Tone Count [time(s)]
 # 1-20 or 0: Infinite
 ###########################################################
-FU_CALL_RING_TIME="0"
+FU_CALL_RING_TIME=""
 
+###########################################################
+#  [Ringtone Settings (Option Input)] Ringtone (1)-(500)
+#
+# Format: FU_CONTACT_CALL_SOUND="<Station number>&&&<Ringtone>"
+#    Parameter 1: Station number : 3-5 digits
+#    Parameter 2: Ringtone   : ｺｰﾙﾊﾟﾀｰﾝ1-6 or ﾄﾚﾓﾛ音 or 話中音 or 保留音 or
+#                     操作音 or ｴﾗｰ音 or custom sound source (1)-(100)
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the ringtones (FU_CONTACT_CALL_SOUND) to be set (max. 500)
+###########################################################
+FU_CONTACT_CALL_SOUND="002&&&ｺｰﾙﾊﾟﾀｰﾝ2"
+FU_CONTACT_CALL_SOUND="003&&&ｺｰﾙﾊﾟﾀｰﾝ2"
+FU_CONTACT_CALL_SOUND="004&&&ｺｰﾙﾊﾟﾀｰﾝ2"
+
+###########################################################
+# [Ringtone Settings (Option Input)] Ringtone (1)-(500) (VER2)
+#
+# Format: FU_CONTACT_CALL_SOUND_VER2="<Station number>&&&<Ringtone>"
+#    Parameter 1: Station number : 3-5 digits
+#    Parameter 2: Ringtone   : 1-6: Call pattern 1-6 or 7: tremolo sound or 8: busy-tone or 9: on-hold sound or
+#                     10: operation sound or 11: error sound or 12: custom sound source (1)-(100)
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the ringtones (FU_CONTACT_CALL_SOUND_VER2) to be set (max. 500)
+###########################################################
+FU_CONTACT_CALL_SOUND_VER2="002&&&2"
+FU_CONTACT_CALL_SOUND_VER2="003&&&2"
+FU_CONTACT_CALL_SOUND_VER2="004&&&2"
 
 ## Paging Settings
 ###########################################################
@@ -917,13 +873,61 @@ FU_CALL_RING_TIME="0"
 FU_PAGING_NOTICE_TONE="1"
 
 ###########################################################
-#  [Paging Output Setting] Paging Audio Output (same as Contact / Audio Output Settings)
-# 1: Built-in Speaker for communication and paging or
-# 2: Audio Output for communication and paging or
-# 3: Built-in Speaker for communication, Audio Output for paging
+# [Paging Time Setting] Paging Timeout [sec]
+# 10-600
 ###########################################################
-FU_DP_GENERIC_AMP_PAGING="1"
+FU_PAGING_MAX="30"
 
+
+## Network Camera Integration
+###########################################################
+# [Network Camera Profile] Profile (1)-(50)
+#
+# Format: FU_NW_CAMERA_VIDEO_SET="<Network Camera Number>&&&<Network Camera Name>&&&<Profile>"
+#    Parameter 1: Network Camera Number  : 01-50 (Unique, corresponding to SI_OTHER_PRODUCT_BOOK Network Camera Number)
+#    Parameter 2: Network Camera Name  : 1-24 alphanumeric characters
+#    Parameter 3: Profile      : 1-64 alphanumeric characters (Profile obtained from Network Camera)
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the profils (FU_NW_CAMERA_VIDEO_SET) to be set (max. 50)
+###########################################################
+FU_NW_CAMERA_VIDEO_SET=""
+
+###########################################################
+# [Event Registry] Camera Name (1)-(50)
+# [Event Registry] Event (1)-(50)
+#
+# Format: FU_NW_CAMERA_INTERLOCK="<Network Camera Number>&&&<Network Camera Name>&&&<Event>"
+#    Parameter 1: Network Camera Number  : 01-50 (Unique, corresponding to SI_OTHER_PRODUCT_BOOK Network Camera Number)
+#    Parameter 2: Network Camera Name  : 1-24 alphanumeric characters
+#    Parameter 3: Event          : 1-255 alphanumeric characters (Event obtained from Network Camera)
+#
+# Note:
+# Parameters separated with "&&&"
+# Indicates the events (FU_NW_CAMERA_INTERLOCK) to be set (max. 50)
+###########################################################
+FU_NW_CAMERA_INTERLOCK=""
+
+###########################################################
+# [Network Camera Event Tone] Network Camera Event Tone
+# ｺｰﾙﾊﾟﾀｰﾝ1-6 or ﾄﾚﾓﾛ音 or 話中音 or 保留音 or
+# 操作音 or ｴﾗｰ音 or custom sound source (1)-(100)
+###########################################################
+FU_NW_CAMERA_REPORT_TONE="ｺｰﾙﾊﾟﾀｰﾝ3"
+
+###########################################################
+# [Network Camera Event Tone] Network Camera Event Tone (VER2)
+# 1-6: Call pattern 1-6 or 7: tremolo sound or 8: busy-tone or 9: on-hold sound or
+# 10: operation sound or 11: error sound or 12: custom sound source (1)-(100)
+###########################################################
+FU_NW_CAMERA_REPORT_TONE_VER2="3"
+
+###########################################################
+# [Network Camera Event Tone] Event Tone Count [time(s)]
+# 1-20 or 0: Infinite
+###########################################################
+FU_NW_CAMERA_REPORT_TONE_COUNT="1"
 
 ## E-mail Settings
 ###########################################################
@@ -1050,7 +1054,7 @@ FU_URGENT_CALL="2&&&2&&&2&&&"
 # Note:
 # Parameters separated with "&&&"
 ###########################################################
-FU_UNLOCK_STATE_NOTIFY=""
+FU_UNLOCK_STATE_NOTIFY="2&&&2&&&2&&&"
 
 ###########################################################
 # [E-mail Event Trigger] Call Failed
@@ -1148,18 +1152,6 @@ FU_DST_EMAIL_ADDR_3_SEND_TIME="00:00"
 ###########################################################
 FU_DST_EMAIL_ADDR_3_SEND_INTERVAL="1"
 
-###########################################################
-# [Additional Settings] Attach Image
-# 1: Enable or 2: Disable
-###########################################################
-FU_EMAIL_FILE_ATTACH="2"
-
-###########################################################
-# [Additional Settings] Attachment Image Filename
-# 1-64 alphanumeric characters
-###########################################################
-FU_EMAIL_ATTACH_FILE_NAME=""
-
 
 ## CGI Integration
 ###########################################################
@@ -1191,6 +1183,98 @@ FU_USE_SIF="1"
 TS_SET_FROM_SUPPORTSOFT="1"
 
 
+## Absent Transfer Settings
+###########################################################
+# Absent Transfer
+# 1: Enable or 2: Disable
+###########################################################
+TS_ABSENCE_TRANSFER="2"
+
+###########################################################
+# Transfer to Station Number
+# 3-5 digits
+###########################################################
+TS_ABSENCE_TRANSFER_DST_NODE_NO=""
+
+
+## Delay Transfer Settings
+###########################################################
+# Delay Transfer
+# 1: Enable or 2: Disable
+###########################################################
+TS_DELAY_TRANSFER="2"
+
+###########################################################
+# Delay Time [sec]
+# 1-300
+###########################################################
+TS_DELAY_TIME="30"
+
+###########################################################
+# Transfer to Station Number
+# 3-5 digits
+###########################################################
+TS_DELAY_TRANSFER_DST_NODE_NO=""
+
+
+## Transfer Schedule Settings
+###########################################################
+# Transfer Schedule
+# 1: Enable or 2: Disable
+###########################################################
+TS_CALL_REPORT_TRANSFER="2"
+
+###########################################################
+# Transfer to Station Number
+# 3-5 digits
+###########################################################
+TS_SCHEDULE_TRANSFER_DST_NODE_NO=""
+
+###########################################################
+#  [Weekly Schedule] Transfer schedule 1  Start time - Hour:Minute
+#  [Weekly Schedule] Transfer schedule 1  End time - Hour:Minute
+# 
+# Format: TS_WEEKLY_SCHED_TRANSFER_<Day of week>="<Start Time>&&&<End Time>"
+#    Parameter 1: Start time  : 00-23 (Hour):00-59 (Minute)
+#    Parameter 2: End time  : 00-23 (Hour):00-59 (Minute)
+# 
+# e.g. "From 12:00 to 13:00" will be shown as "12:00&&&13:00."
+###########################################################
+# Sunday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_SUN=""
+
+###########################################################
+# Monday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_MON=""
+
+###########################################################
+# Tuesday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_TUE=""
+
+###########################################################
+# Wednesday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_WED=""
+
+###########################################################
+# Thursday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_THR=""
+
+###########################################################
+# Friday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_FRI=""
+
+###########################################################
+# Saturday
+###########################################################
+TS_WEEKLY_SCHED_TRANSFER_SAT=""
+
+
 ###########################################################
 #                                                         #
 # Station Hardware Settings                               #
@@ -1205,73 +1289,114 @@ TS_SET_FROM_SUPPORTSOFT="1"
 DS_SET_FROM_SUPPORTSOFT="1"
 
 
+## Speed Dial Button Settings
+###########################################################
+# [Destination Assignment] Mode Selection (1)-(6)
+# [Destination Assignment] Group Number (1)-(6)
+# [Destination Assignment] Station Number (1)-(6)
+# [Destination Assignment] Priority (1)-(6)
+# 
+# Format: DS_SPEEDDIAL_BTN_1="<Mode Selection>&&&<Group Number>&&&<Station Number>&&&<Priority>"
+#    Parameter 1: Mode selection  : 1: Group call or 2: Individual call or 3: Group page or 4: All Page
+#    Parameter 2: Group number    : 01-99
+#    Parameter 3: Station number      : 3-5 digits
+#    Parameter 4: Priority        : 1: Normal or 2: Priority or 3: Urgent
+# 
+# Note:
+# Parameters separated with "&&&"
+###########################################################
+DS_SPEEDDIAL_BTN_1=""
+DS_SPEEDDIAL_BTN_2=""
+DS_SPEEDDIAL_BTN_3=""
+DS_SPEEDDIAL_BTN_4=""
+DS_SPEEDDIAL_BTN_5=""
+DS_SPEEDDIAL_BTN_6=""
+
+
+## Privacy Setting
+###########################################################
+# Privacy
+# 1: Enable or 2: Disable
+###########################################################
+DS_PRIVACY_SETTING="2"
+
+
 ## Volume Settings
 ###########################################################
-# [Volume Settings] Transmit Volume
+# [Volume Settings] Handset Transmit Volume
 # 1-10
 ###########################################################
-DS_SND_SOUND_VOLUME="10"
+DS_HS_SND_SOUND_VOLUME="10"
 
 ###########################################################
-# [Volume Settings] Receive Volume
+# [Volume Settings] Handset Receive Volume
 # 1-10
 ###########################################################
-DS_RCV_SOUND_VOLUME="10"
+DS_HS_RCV_SOUND_VOLUME="6"
+
+###########################################################
+# [Volume Settings] Hands-free Transmit Volume
+# 1-10
+###########################################################
+DS_HF_SND_SOUND_VOLUME="10"
+
+###########################################################
+# [Volume Settings] Hands-free Receive Volume
+# 1-10
+###########################################################
+DS_HF_RCV_SOUND_VOLUME="6"
 
 ###########################################################
 # Ringtone Volume
 #  0-10
 ###########################################################
-DS_CALL_SOUND_VOLUME="10"
+DS_CALL_SOUND_VOLUME="6"
+
+###########################################################
+# Button Feedback Tone
+# 1: Enable or 2: Disable
+###########################################################
+DS_OPERATION_TONE="2"
 
 
 ## Communication Settings
 ###########################################################
 # Talk Timeout [sec]
-# 30-600 or -1: Infinite
+# 30-600
 ###########################################################
 DS_MAX_CALL_TIME="60"
 
-
-## Camera Settings
 ###########################################################
-# [Environmental Settings] Backlight Compensation Adjustment
+# Force Push-to-talk
 # 1: Enable or 2: Disable
 ###########################################################
-DS_BACKLIGHT_COMPENSATION="2"
+DS_CONTINUOUS_PRESSTALK="2"
+
+
+## Monitor Setting
+###########################################################
+# Monitor Timeout [sec]
+# 10-600
+###########################################################
+DS_MAX_MONITOR_TIME="60"
+
+
+## Master Station Display Settings
+###########################################################
+# Brightness
+# 1-10
+###########################################################
+DS_LCD_BRIGHTNESS="6"
 
 ###########################################################
-# [Environmental Settings] Low Light Sensitivity Adjustment
-# 1: Enable or 2: Disable
+# Time Format
+# 1: mm/dd/yyyy (12h) or 2: mm/dd/yyyy (24h) or 3: dd/mm/yyyy (12h) or
+# 4: dd/mm/yyyy (24h) or 5: yyyy/mm/dd (12h) or 6: yyyy/mm/dd (24h)
 ###########################################################
-DS_NIGHT_SENSITIVITY_COMPENSATION="2"
+DS_TIME_DISPLAY="1"
 
 ###########################################################
-# [Color Settings] Brightness
-# 1-100
+# Standby LED State
+# 1: Light ON or 2: Light OFF
 ###########################################################
-DS_BRIHTNESS_SETTING="50"
-
-###########################################################
-# [Color Settings] Contrast
-# 1-100
-###########################################################
-DS_SHARPNESS_SETTING="50"
-
-###########################################################
-# [Color Settings] Color
-# 1-100
-###########################################################
-DS_HUE_SETTING="50"
-
-###########################################################
-# [LED Illumination Control] During Call / Communication
-# 1: Enable or 2: Disable
-###########################################################
-DS_WLED_CTRL_CALLING="1"
-
-###########################################################
-# [LED Illumination Control] While Monitored
-# 1: Enable or 2: Disable
-###########################################################
-DS_WLED_CTRL_MONITORED="2"
+DS_NORMAL_TIME_STATUS_LED="1"

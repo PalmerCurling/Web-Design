@@ -15,14 +15,14 @@ BI_SET_FROM_SUPPORTSOFT="1"
 # IX Support Tool setting memo
 #
 ###########################################################
-BI_COMMUNICATION_MEMO_A="admin"
-BI_COMMUNICATION_MEMO_B="admin"
+BI_COMMUNICATION_MEMO_A=""
+BI_COMMUNICATION_MEMO_B=""
 
 ###########################################################
 # Association key
 # MAC Address
 ###########################################################
-BI_ASSOCIATION_KEY="00:0B:AA:16:79:F0"
+BI_ASSOCIATION_KEY="00:0B:AA:16:79:F1"
 
 ###########################################################
 # Station type
@@ -36,13 +36,13 @@ BI_DEVICE_TYPE="1"
 # Number
 # 3-5 digits
 ###########################################################
-BI_NODE_NO="004"
+BI_NODE_NO="002"
 
 ###########################################################
 # Name
 # 1-24 alphanumeric characters
 ###########################################################
-BI_DEVICE_NAME="Elevator Lobby"
+BI_DEVICE_NAME="Video Station1"
 
 ###########################################################
 # Name (furigana)
@@ -103,7 +103,7 @@ BI_LANGUAGE_VER2="2"
 # [Time Zone] Select time zone
 # UTC+09:00
 ###########################################################
-BI_TIMEZONE="19"
+BI_TIMEZONE="7"
 
 ###########################################################
 # [Time Zone]Select time zone (VER2)
@@ -207,13 +207,13 @@ BI_TIMEZONE="19"
 #  or 98: (GMT+13:00) Tokelau
 #  or 99: (GMT+14:00) Kiribati (Line Islands)
 ###########################################################
-BI_TIMEZONE_VER2="19"
+BI_TIMEZONE_VER2="7"
 
 ###########################################################
 # [Daylight Savings Time] Enable automatic daylight savings time
 # 1: Yes or 2: No
 ###########################################################
-BI_SUMMERTIME_FLAG="1"
+BI_SUMMERTIME_FLAG="2"
 
 
 
@@ -221,7 +221,7 @@ BI_SUMMERTIME_FLAG="1"
 # [NTP] Enable NTP
 # 1: Yes or 2: No
 ###########################################################
-BI_NTP_USE_FLAG="1"
+BI_NTP_USE_FLAG="2"
 
 ###########################################################
 # [Date and Time] Time
@@ -261,7 +261,7 @@ NE_ADDRESS_SET_METHOD="2"
 # [IPv4 Address] IP Address
 # 1.0.0.0-223.255.255.255
 ###########################################################
-NE_IPV4_SRC_ADDR="10.225.92.63"
+NE_IPV4_SRC_ADDR="10.225.92.61"
 
 ###########################################################
 # [IPv4 Address] Subnet Mask
@@ -273,7 +273,7 @@ NE_SUBNET_MASK="255.255.255.0"
 # [IPv4 Address] Default Gateway
 # 1.0.0.0-223.255.255.255
 ###########################################################
-NE_IPV4_DEFAULT_GATEWAY="10.225.92.1"
+NE_IPV4_DEFAULT_GATEWAY=""
 
 ###########################################################
 # [IPv6 Address] IP Address
@@ -558,7 +558,7 @@ NE_VLAN_PRIORITY="0"
 # [Primary Server] Address [IPv4]
 # 1.0.0.0-223.255.255.255 or hostname (1-64 alphanumeric characters)
 ###########################################################
-NE_NTP_PRIMARY_SERVER_IPV4_ADDR="10.1.20.36"
+NE_NTP_PRIMARY_SERVER_IPV4_ADDR=""
 
 ###########################################################
 # [Primary Server] Address [IPv6]
@@ -577,7 +577,7 @@ NE_NTP_PRIMARY_PORT="123"
 # [Secondary Server] Address [IPv4]
 # 1.0.0.0-223.255.255.255 or hostname (1-64 alphanumeric characters)
 ###########################################################
-NE_NTP_SECONDARY_SERVER_IPV4_ADDR="10.253.5.26"
+NE_NTP_SECONDARY_SERVER_IPV4_ADDR=""
 
 ###########################################################
 # [Secondary Server] Address [IPv6]
@@ -822,7 +822,7 @@ FU_UNLOCK_SOUND_VER2="10"
 # [Door Release Authorization] Authentication Key
 # 1-4 digits
 ###########################################################
-FU_UNLOCK_KEY="3331"
+FU_UNLOCK_KEY="7810"
 
 ###########################################################
 # [Door Release Output Settings (same as Contact / Audio Output Settings)] (1)
@@ -1166,7 +1166,7 @@ FU_EMAIL_ATTACH_FILE_NAME=""
 # CGI Functionality
 # 1: Enable or 2: Disable
 ###########################################################
-FU_USE_CGI="1"
+FU_USE_CGI="2"
 
 
 ## SIF Integration
@@ -1174,7 +1174,7 @@ FU_USE_CGI="1"
 # SIF Functionality
 # 1: Enable or 2: Disable
 ###########################################################
-FU_USE_SIF="1"
+FU_USE_SIF="2"
 
 
 ###########################################################
